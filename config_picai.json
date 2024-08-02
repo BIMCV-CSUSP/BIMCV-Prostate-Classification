@@ -1,0 +1,87 @@
+{
+    "name": "Prostate_Picai",
+    "description": "",
+    "task": "classification",
+    "n_gpu": 1,
+    "seed": 42,
+    "arch": {
+        "module": "monai.networks.nets",
+        "type": "EfficientNetBN",
+        "args": {
+            "model_name": "efficientnet-b7",
+            "spatial_dims": 3,
+            "in_channels": 3,
+            "num_classes": 2,
+            "pretrained": false,
+            "progress": false
+        }
+    },
+    "data_loader": {
+        "module": "Dataloader_Picai",
+        "type": "Dataloader",
+        "partitions": {
+            "folds": [
+                "Fold 0",
+                "Fold 1",
+                "Fold 2",
+                "Fold 3",
+                "Fold 4"
+            ],
+            "train": "train",
+            "val": "val",
+            "test": "test"
+        },
+        "args": {
+            "path": "/home/jaalzate/Prostate_Cancer_TFM/Files/PICAI/partition_1_cv.csv",
+            "test_run": false,
+            "config": {
+                "batch_size": 16,
+                "drop_last": true,
+                "shuffle": true
+            }
+        }
+    },
+    "optimizer": {
+        "type": "Adadelta",
+        "args": {
+            "lr": 1.0,
+            "rho": 0.95,
+            "eps": 1e-07
+        }
+    },
+    "loss": {
+        "module": "torch.nn",
+        "type": "CrossEntropyLoss",
+        "args": {}
+    },
+    "metrics": {
+        "accuracy": {
+            "module": "torchmetrics.functional.classification",
+            "type": "accuracy",
+            "args": {
+                "task": "multiclass",
+                "average": "weighted",
+                "num_classes": 2
+            }
+        },
+        "f1": {
+            "module": "torchmetrics.functional",
+            "type": "f1_score",
+            "args": {
+                "task": "multiclass",
+                "average": "weighted",
+                "num_classes": 2
+            }
+        }
+    },
+    "trainer": {
+        "type": "ClassificationTrainer",
+        "epochs": 100,
+        "save_dir": "/home/jaalzate/Prostate_Cancer_TFM/Classification/logs/",
+        "save_period": 33,
+        "verbosity": 2,
+        "monitor": "max f1",
+        "early_stop": 100,
+        "tensorboard": true
+    }
+}
