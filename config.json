@@ -1,0 +1,78 @@
+{
+    "name": "Prostate",
+    "description": "",
+    "task": "classification",
+    "n_gpu": 1,
+    "seed": 42,
+    "arch": {
+        "module": "models",
+        "type": "EfficientNet_pretrained",
+        "args": {
+            "model_name": "efficientnet-b7",
+            "n_classes": 2,
+            "in_channels_eff": 3,
+            "pretrained_weights_path": "/home/jaalzate/Prostate_Cancer_TFM/Classification/logs/classification/Prostate_Picai/04-Jul-2024-09:19:41/models/Fold 2/best-model-weights.pth" 
+        }
+    },
+    "data_loader": {
+        "module": "Dataloader",
+        "type": "Dataloader",
+        "partitions": {
+            "train": "train",
+            "val": "val",
+            "test": "test"
+        },
+        "args": {
+            "path": "/home/jaalzate/Prostate_Cancer_TFM/Files/Own_data/Associated_Images_Unified_Derivatives.csv",
+            "test_run": false,
+            "config": {
+                "batch_size": 16,
+                "drop_last": true,
+                "shuffle": true
+            }
+        }
+    },
+    "optimizer": {
+        "type": "Adadelta",
+        "args": {
+            "lr": 1.0,
+            "rho": 0.95,
+            "eps": 1e-07
+        }
+    },
+    "loss": {
+        "module": "torch.nn",
+        "type": "CrossEntropyLoss",
+        "args": {}
+    },
+    "metrics": {
+        "accuracy": {
+            "module": "torchmetrics.functional.classification",
+            "type": "accuracy",
+            "args": {
+                "task": "multiclass",
+                "average": "weighted",
+                "num_classes": 2
+            }
+        },
+        "f1": {
+            "module": "torchmetrics.functional",
+            "type": "f1_score",
+            "args": {
+                "task": "multiclass",
+                "average": "weighted",
+                "num_classes": 2
+            }
+        }
+    },
+    "trainer": {
+        "type": "ClassificationTrainer",
+        "epochs": 150,
+        "save_dir": "/home/jaalzate/Prostate_Cancer_TFM/Classification/logs/",
+        "save_period": 33,
+        "verbosity": 2,
+        "monitor": "max val_f1",
+        "early_stop": 100,
+        "tensorboard": true
+    }
+}
