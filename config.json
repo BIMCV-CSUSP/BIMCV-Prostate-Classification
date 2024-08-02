@@ -11,7 +11,7 @@
             "model_name": "efficientnet-b7",
             "n_classes": 2,
             "in_channels_eff": 3,
-            "pretrained_weights_path": "/home/jaalzate/Prostate_Cancer_TFM/Classification/logs/classification/Prostate_Picai/04-Jul-2024-09:19:41/models/Fold 2/best-model-weights.pth" 
+            "pretrained_weights_path": "BIMCV-Prostate-Classification/logs/classification/Prostate_Picai/04-Jul-2024-09:19:41/models/Fold 2/best-model-weights.pth" 
         }
     },
     "data_loader": {
@@ -23,7 +23,7 @@
             "test": "test"
         },
         "args": {
-            "path": "/home/jaalzate/Prostate_Cancer_TFM/Files/Own_data/Associated_Images_Unified_Derivatives.csv",
+            "path": "./Files/training_df.csv",
             "test_run": false,
             "config": {
                 "batch_size": 16,
