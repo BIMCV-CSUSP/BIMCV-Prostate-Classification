@@ -26,7 +26,7 @@
         },
         "args": {
             "path": "/home/jaalzate/BIMCV-Prostate-Classification/Files/training_df_variables_not_na.csv",
-            "test_run": true,
+            "test_run": false,
             "config": {
                 "batch_size": 16,
                 "drop_last": true,

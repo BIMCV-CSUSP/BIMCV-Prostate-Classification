@@ -22,4 +22,4 @@ export PYTHONPATH="/projects/ceib/python_enviroments/bimcv_aikit/lib/python3.10/
 
 cd /home/jaalzate/BIMCV-Prostate-Classification/ClinicalVariablesComparison
 
-bimcv_train -c /home/jaalzate/BIMCV-Prostate-Classification/ClinicalVariablesComparison/config.json
+bimcv_train -c /home/jaalzate/BIMCV-Prostate-Classification/ClinicalVariablesComparison/config_multi.json

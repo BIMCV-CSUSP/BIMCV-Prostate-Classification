@@ -1,0 +1,78 @@
+{
+    "name": "ProstateMultimodal",
+    "description": "Using images and clinical variables",
+    "task": "classification",
+    "n_gpu": 1,
+    "seed": 42,
+    "arch": {
+        "module": "models",
+        "type": "EfficientNetMultimodal",
+        "args": {
+            "model_name": "efficientnet-b7",
+            "in_channels_eff": 3,
+            "n_classes": 2,
+            "in_num_features": 4
+        }
+    },
+    "data_loader": {
+        "module": "Dataloader",
+        "type": "ProstateMultimodalDataLoader",
+        "partitions": {
+            "train": "train",
+            "val": "val",
+            "test": "test"
+        },
+        "args": {
+            "path": "/home/jaalzate/BIMCV-Prostate-Classification/Files/training_df_variables_not_na.csv",
+            "test_run": false,
+            "config": {
+                "batch_size": 16,
+                "drop_last": true,
+                "shuffle": true
+            }
+        }
+    },
+    "optimizer": {
+        "type": "Adadelta",
+        "args": {
+            "lr": 1.0,
+            "rho": 0.95,
+            "eps": 1e-07
+        }
+    },
+    "loss": {
+        "module": "torch.nn",
+        "type": "CrossEntropyLoss",
+        "args": {}
+    },
+    "metrics": {
+        "accuracy": {
+            "module": "torchmetrics.functional.classification",
+            "type": "accuracy",
+            "args": {
+                "task": "multiclass",
+                "average": "weighted",
+                "num_classes": 2
+            }
+        },
+        "f1": {
+            "module": "torchmetrics.functional",
+            "type": "f1_score",
+            "args": {
+                "task": "multiclass",
+                "average": "weighted",
+                "num_classes": 2
+            }
+        }
+    },
+    "trainer": {
+        "type": "MultimodalClassificationTrainer",
+        "epochs": 150,
+        "save_dir": "/home/jaalzate/BIMCV-Prostate-Classification/ClinicalVariablesComparison/logs",
+        "save_period": 33,
+        "verbosity": 2,
+        "monitor": "max val_f1",
+        "early_stop": 100,
+        "tensorboard": true
+    }
+}

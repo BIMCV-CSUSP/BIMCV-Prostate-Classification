@@ -8,7 +8,7 @@ from torch import as_tensor
 from torch.nn.functional import one_hot
 
 config_default = {}
-class Dataloader:
+class DataloaderImages:
     def __init__(
         self,
         path: str,
@@ -22,10 +22,17 @@ class Dataloader:
         config: dict = config_default,
     ):
         df = read_csv(path, sep=sep)
+        variables = ["ED", "PSA", "VP", "PSA_density", "csPC"]
+        df_filtered = df[variables].dropna()
+
+        # Eliminar valores extremos basados en percentiles
+        lower_bound = df_filtered.quantile(0.01)
+        upper_bound = df_filtered.quantile(0.99)
+        df_cleaned = df_filtered[(df_filtered >= lower_bound) & (df_filtered <= upper_bound)].dropna()
 
         n_classes = len(unique(df["csPC"].values))
 
-        self.groupby = df.groupby(partition_column)
+        self.groupby = df.iloc[df_cleaned.index].groupby(partition_column)
 
         self._class_weights = compute_class_weight(
             class_weight="balanced",
@@ -101,13 +108,12 @@ class Dataloader:
         return self._class_weights
 
 
-class ProstateMultimodalDataLoader(DataLoader):
+class ProstateMultimodalDataLoader(DataloaderImages):
     def __init__(
         self,
         path: str,
         sep: str = ",",
         classes: list = ["noCsPCa", "CsPCa"],
-        format_load: str = "cropped",
         img_columns=["t2", "adc", "dwi"],
         test_run: bool = False,
         input_shape: str = "(128, 128, 32)",
@@ -115,28 +121,28 @@ class ProstateMultimodalDataLoader(DataLoader):
         partition_column: str = "partition",
         config: dict = config_default,
     ):
-        super().__init__(path, sep, classes, format_load, img_columns, test_run, input_shape, rand_prob, partition_column, config)
-        self.clinical_cols = ["patient_age", "psa", "psad", "prostate_volume"]
-        self.train_transforms = transforms.Compose(
-            [
-                transforms.LoadImaged(keys=img_columns + ["zones"], reader="NibabelReader", image_only=True),
-                transforms.EnsureChannelFirstd(keys=img_columns + ["zones"]),
-                transforms.AsDiscreted(keys="zones", argmax=False, to_onehot=3),
-                transforms.LabelToMaskd(keys="zones", select_labels=[1, 2]),
-                transforms.ResampleToMatchd(
-                    keys=["adc", "dwi", "zones"],
-                    key_dst="t2",
-                    mode=("bilinear", "bilinear", "nearest"),
-                ),  # Resample images to t2 dimension
-                transforms.Resized(
-                    keys=img_columns + ["zones"],
-                    spatial_size=eval(input_shape),
-                    mode=("trilinear", "trilinear", "trilinear", "nearest"),
-                ),  # SAMUNETR: Reshape to have the same dimension
-                transforms.ScaleIntensityd(keys=img_columns, minv=0.0, maxv=1.0),
-                transforms.NormalizeIntensityd(keys=img_columns),
-                transforms.ConcatItemsd(keys=img_columns + ["zones"], name="image", dim=0),
-                transforms.ToTensord(keys=["numeric"]),
+        super().__init__(path=path, sep=sep, classes=classes, img_columns=img_columns, test_run=test_run, input_shape=input_shape, rand_prob=rand_prob, partition_column=partition_column, config=config)
+        self.clinical_cols = ["ED", "PSA", "VP", "PSA_density"]
+        self.train_transforms = transforms.Compose([
+            transforms.LoadImaged(keys=img_columns, image_only=True,ensure_channel_first=True),
+            transforms.ResampleToMatchd(
+                keys=["adc", "dwi"],
+                key_dst="t2",
+                mode=("bilinear", "bilinear"),
+            ), # Resample images to t2 dimension
+            transforms.SplitDimd(
+                keys=["dwi"],
+                keepdim=True,
+            ), 
+            transforms.Resized(
+                keys=['t2','dwi_0','adc'],
+                spatial_size=eval(input_shape),
+                mode=("trilinear", "trilinear", "trilinear"),
+            ),
+            transforms.ScaleIntensityd(keys=['t2','dwi_0','adc'], minv=0.0, maxv=1.0, allow_missing_keys=True),
+            transforms.ConcatItemsd(keys=['t2','dwi_0','adc'], name="image", dim=0),
+            transforms.SelectItemsd(keys=["image", "label","numeric"]),
+            transforms.ToTensord(keys=["numeric"]),
                 # transforms.RandCropByPosNegLabeld(keys=["image"], label_key="zones", spatial_size=[96, 96, 32],num_samples=4,image_key="image",image_threshold=0)
                 # transforms.RandSpatialCropSamplesd(keys=['image','label'],roi_size=[96,96,-1],num_samples=8,random_size=False),#For the other models
                 # transforms.RandRotate90d(keys=['image'],spatial_axes=0,prob=prob),
@@ -149,23 +155,24 @@ class ProstateMultimodalDataLoader(DataLoader):
         )
         self.val_transforms = transforms.Compose(
             [
-                transforms.LoadImaged(keys=img_columns + ["zones"], image_only=True),
-                transforms.EnsureChannelFirstd(keys=img_columns + ["zones"]),
-                transforms.AsDiscreted(keys="zones", argmax=True, to_onehot=3),
-                transforms.LabelToMaskd(keys="zones", select_labels=[1, 2]),
+                transforms.LoadImaged(keys=img_columns, image_only=True,ensure_channel_first=True),
                 transforms.ResampleToMatchd(
-                    keys=["adc", "dwi", "zones"],
+                    keys=["adc", "dwi"],
                     key_dst="t2",
-                    mode=("bilinear", "bilinear", "nearest"),
-                ),  # Resample images to t2 dimensions
+                    mode=("bilinear", "bilinear"),
+                ), # Resample images to t2 dimension
+                transforms.SplitDimd(
+                    keys=["dwi"],
+                    keepdim=True,
+                ), 
                 transforms.Resized(
-                    keys=img_columns + ["zones"],
+                    keys=['t2','dwi_0','adc'],
                     spatial_size=eval(input_shape),
-                    mode=("trilinear", "trilinear", "trilinear", "nearest"),
-                ),  # SAMUNETR: Reshape to have the same dimension
-                transforms.ScaleIntensityd(keys=img_columns, minv=0.0, maxv=1.0),
-                transforms.NormalizeIntensityd(keys=img_columns),
-                transforms.ConcatItemsd(keys=img_columns + ["zones"], name="image", dim=0),
+                    mode=("trilinear", "trilinear", "trilinear"),
+                ),
+                transforms.ScaleIntensityd(keys=['t2','dwi_0','adc'], minv=0.0, maxv=1.0, allow_missing_keys=True),
+                transforms.ConcatItemsd(keys=['t2','dwi_0','adc'], name="image", dim=0),
+                transforms.SelectItemsd(keys=["image", "label","numeric"]),
                 transforms.ToTensord(keys=["numeric"]),
             ]
         )
@@ -173,15 +180,16 @@ class ProstateMultimodalDataLoader(DataLoader):
         self.config_args = config
 
     def __call__(self, partition: str):
+        if partition == "test":
+            return None
         clinical_variables = array(self.groupby.get_group(partition)[self.clinical_cols].values, dtype=float32)
         data = [
-            {"t2": t2, "adc": adc, "dwi": dwi, "label": label, "zones": zone, "numeric": clinical}
-            for t2, adc, dwi, label, zone, clinical in zip(
-                self.groupby.get_group(partition)["filepath_t2w_" + self.format_load].values,
-                self.groupby.get_group(partition)["filepath_adc_" + self.format_load].values,
-                self.groupby.get_group(partition)["filepath_hbv_" + self.format_load].values,
-                one_hot(as_tensor(self.groupby.get_group(partition)["label"].values)).float(),
-                self.groupby.get_group(partition)["filepath_seg_zones_cropped"].values,
+             {"t2": t2, "adc": adc, "dwi": dwi, "label": label, "numeric": clinical}
+            for t2, adc, dwi, label, clinical in zip(
+                self.groupby.get_group(partition)["image_t2"].values,
+                self.groupby.get_group(partition)["image_adc"].values,
+                self.groupby.get_group(partition)["image_dwi"].values,
+                one_hot(as_tensor(self.groupby.get_group(partition)["csPC"].values, dtype=int)).float(),
                 clinical_variables,
             )
         ]
