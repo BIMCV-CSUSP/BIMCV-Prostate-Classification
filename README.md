@@ -64,6 +64,11 @@ The current release depends on the following Python libraries:
 - torchvision == 0.13.1
 - tqdm == 4.62.3
 
+Notebook analysis also uses:
+- plotly
+- kaleido (static export requires Chrome or `kaleido.get_chrome()`)
+- ipywidgets (for tqdm progress bars in notebooks)
+
 ## Installation
 
 To set up the project environment and code you can install [BIMCV_AIKit](https://github.com/BIMCV-CSUSP/BIMCV-AIKit):
