@@ -3,3 +3,4 @@
 logs/
 .venv/
 BIMCV-AIKit/
+averaged_pretrained_backbone.pt
