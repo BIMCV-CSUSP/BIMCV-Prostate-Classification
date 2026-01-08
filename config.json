@@ -1,6 +1,6 @@
 {
-    "name": "Prostate",
-    "description": "",
+    "name": "Prostate_BIMCV_noDerivatives",
+    "description": "With new Fold 4 Picai weights no Derivatives",
     "task": "classification",
     "n_gpu": 1,
     "seed": 42,
@@ -11,7 +11,7 @@
             "model_name": "efficientnet-b7",
             "n_classes": 2,
             "in_channels_eff": 3,
-            "pretrained_weights_path": "BIMCV-Prostate-Classification/logs/classification/Prostate_Picai/04-Jul-2024-09:19:41/models/Fold 2/best-model-weights.pth" 
+            "pretrained_weights_path": "/home/ceib/jaalzate/BIMCV-Prostate-Classification/logs/classification/Prostate_Picai_efficientnetb7/18-Aug-2025-10:41:51/models/Fold 4/best-model-weights.pth" 
         }
     },
     "data_loader": {
@@ -23,10 +23,11 @@
             "test": "test"
         },
         "args": {
-            "path": "./Files/training_df.csv",
+            "path": "./Files/data_noder.csv",
             "test_run": false,
+            "partition_column": "split",
             "config": {
-                "batch_size": 16,
+                "batch_size": 32,
                 "drop_last": true,
                 "shuffle": true
             }
@@ -67,12 +68,12 @@
     },
     "trainer": {
         "type": "ClassificationTrainer",
-        "epochs": 150,
-        "save_dir": "/home/jaalzate/Prostate_Cancer_TFM/Classification/logs/",
+        "epochs": 200,
+        "save_dir": "/home/ceib/jaalzate/BIMCV-Prostate-Classification/logs",
         "save_period": 33,
         "verbosity": 2,
         "monitor": "max val_f1",
-        "early_stop": 100,
+        "early_stop": 200,
         "tensorboard": true
     }
 }

@@ -1,0 +1,1382 @@
+label_MIDS_session,label_MIDS_subject,project,dep,ED,AF,TB,TR,PSA,VP,PIR,csPC,F_nacimiento,F_RM,F_TACTO_RECTAL,F_PSA,F_csPC,VP_text,MRI_Report,reports_count,ID_XNAT_subject,ID_XNAT_session
+ses-000079,sub-000079,p0042021,7.0,68.0,,,,2.38,,,1.0,1941-06-05,2010-05-03,,-41.0,-43.0,,"JUICIO JUICIO
+Paciente intervenido: PRadical x Adenocarcinoma de próstata. con resultado de pT3 Nx Mo que presentó recidiva bioquímica y se le dío RT de adyuvante en 2007 . En PET colina se observa captación el lecho quirúrgico izquierdo, a correlacionar con RM.
+
+
+TÉCNICA: RM lecho prostático con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 1000, <NUM> y 2000.
+Calidad de imagen: Satisfactorio
+
+HALLAZGOS:
+
+Se identifica resto de vesícula seminales  fundamentalmente en el lado derecho. También sospecha de resto glandular, identificando en el lado derecho en topografía del lóbulo periférico derecha un área de 8mm con hipointensidad de señal en T2 y restricción de la difusión con realce tras la administración del contraste sugestivo de resto - recidiva tumoral.
+
+No se identifican adenopatías pélvicas de tamaño significativo.
+
+Las estructuras óseas visualizadas no muestran alteraciones que sugieran enfermedad ósea metastásica.
+
+Vejiga y recto sin hallazgos a reseñar en esta exploración.
+
+No se observa líquido libre en pelvis ni colecciones.
+
+CONCLUSIÓN: Resto de vesículas seminales fundamentalmente en el lado derecho. También sospecha de resto glandular, identificando en el lado derecho en topografía del lóbulo periférico derecha un área de 8mm sugestiva de resto - recidiva tumoral.
+",1,XNAT3_S36816,XNAT3_E91859
+ses-000099,sub-000099,p0042021,7.0,57.0,,,,5.900000000000000,,"[4, 5]",1.0,1950-03-28,2007-12-21,,-157.0,70.0,,"DATOS CLÍNICOS:  ADC prostata. Gleason 3+3 en LPD.
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusion durante 5 min. Secuencias de difusión con b: 0, 1000 y 2000.
+HALLAZGOS:
+
+Calidad de imagen: Satisfactorio
+
+MORFOLOGÍA:
+Próstata hipertrófica.
+Tamaño:  5,3x 3,1 x 4 cm (T, AP y CC)
+Volumen:   34cc
+
+PIRADS(v2):
+Restos hemáticos de predominio periférico derecho.
+Zona periférica:  Se aprecia  área de restricción de la DW  localizada en la  glándula media  derecha, afectando segmentos PZa PZpl , con hipointensidad  moderada en el mapa ADC, con captación precoz del contraste,  mide aproximadamente 17 mm. Pi-RADS 5.
+Otro foco mas anterior que afecta cuerno del segmento PZa de la glándula media derecha y se extiende al segmento TZa  ipsilateral, mide 12 mm. PIRADS 4
+Otro foco de pequeño tamaño de 4 mm en segmento PZ pl derecho de la glándula apical. PIRADS 4
+
+Zona transición:
+Nodulos  hiperplasicos.
+
+Extensión extracapsular: NO
+
+Afectación del paquete vasculonervioso periprostático: NO
+
+Afectación de vesícula seminales: NO
+
+Cuello de la vejiga: Normal,
+Esfínter distal: Normal
+
+Conclusión:
+- Lesión en la glándula media derecha, afectando segmentos PZa PZpl de 17 mm, Pi-RADS 5.
+- Lesión en cuerno del segmento PZa de la glándula media derecha de 12 mm,  Pi-RADS 4.
+- Lesión en segmento PZ pl de la glándula apical derecha de 4 mm Pi-RADS 4.
+
+
+
+
+
+
+",1,XNAT3_S36836,XNAT3_E91879
+ses-000110,sub-000110,p0042021,7.0,68.0,,,,,,,1.0,1949-05-23,2017-05-31,,,69.0,,,0,XNAT3_S36847,XNAT3_E91890
+ses-000176,sub-000176,p0042021,17.0,64.0,,0.0,,10.08000000000000,56.57079999999999,[4],1.0,1945-10-25,2010-09-11,,-286.0,483.0,"Próstata de 4,6 x 5,5 x 4,3 cm de diámetros CC x T x AP","MOTIVO MOTIVO MOTIVO PSA de 10 a 13. Biopsia negativa.
+
+EXPLORACIÓN REALIZADA: RM DE PRÓSTATA MULTIPARAMÉTRICA, SIN ESPECTRO: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusión y mapa ADC, TSE T1 previo y tras la administración de gadolinio endovenoso, con estudio de perfusión mediante LAVA GENiq, (Dotarem), se analizan curvas de captación. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristálticos intestinales).
+
+
+INFORME
+
+Próstata de 4,6 x 5,5 x 4,3 cm de diámetros CC x T x AP.
+La zona transicional se muestra heterogénea hipointensa en la secuencia T2, en relación a predominio de zonas adenomatosas.
+La zona periférica presenta 2 pequeñas lesiones, aunque no bien definidas, hipointensas en T2, de 5 mm aproximadamente, una en la región apical posterior de lóbulo derecho y otra basal posterior también del lóbulo derecho, muestran restricción en la secuencia de difusión, en principio podrían tratarse de lesiones pirads 4. No se identifican otras alteraciones en la zona periférica.
+La cápsula y bandeletas neurovasculares se muestran conservadas.
+Las vesículas seminales, presentan morfología e intensidad de señal conservada.
+No se observan ganglios de aspecto patológico en cadenas iliacas.
+Vejiga de pared trabeculada, se aprecian 2 litiasis de morfología ovalada, de 13 y 14 mm, de superficie lisa, sin otros hallazgos reseñables.
+Segmento distal de ambos uréteres de calibre normal.
+Diverticulosis de sigma.
+No se observa líquido libre en la pelvis.
+
+
+IMPRESIÓN IMPRESIÓN
+Se identifican 2 pequeñas lesiones de 5 mm aproximadamente pirads 4, en ZP, región apical y basal del LD.
+Litiasis vesical.
+",1,XNAT3_S36913,XNAT3_E91956
+ses-006038,sub-005584,p0052021,5.0,63.0,,,,8.960000000000001,27.0,[4],1.0,1949-06-14,2012-09-20,,-2.0,346.0,"3,8 x 3,3 x 4,2 cm (27 cm³).","
+INFORMACIÓN INFORMACIÓN
+Paciente con cáncer de próstata Gleason 6 un solo cilindro en vigilancia activa. Solicito RM multiparamétrica para valorar áreas sugestivas de biopsia para fusión.
+
+TÉCNICA: Se obtienen planos en proyección axial T1, axial, sagital y coronal T2, axial difusión. Secuencia dinámica perfusión axial 3DT1 con saturación grasa tras la administración de contraste (Dotarem, 22 mL), con evaluación multiparamétrica.
+
+INFORME:
+
+Próstata con unos diámetros de 3,8 x 3,3 x 4,2 cm (27 cm³).
+
+Zona periférica:
+No se evidencian alteraciones de difusión ni de perfusión significativas sugestivas de neoplasia clínicamente significativa, aunque existe una mala delimitación con alteración de señal en el ápex de la próstata, a valorar clínicamente.
+
+Zona transicional:
+Lesión focal mal delimitada, de unos 12 mm de diámetro localizada la zona transicional anterior izquierda del tercio medio correspondiente a PI-RADS 4.
+
+Discreta alteración de señal del contenido de las vesículas seminales, puede estar en relación con contenido hemático.
+
+No se evidencia crecimiento ganglionar locorregional significativo ni signos de afectación metastásica ósea en cintura pélvica.
+
+Incidentalmente se evidencian cambios degenerativos en cadera izquierda con presencia de deformidad significativa en la transición entre la cabeza y el cuello femoral izquierdos, en probable relación con pinzamiento femoroacetabular tipo CAM izquierdo.
+
+",1,XNAT03_S00153,XNAT03_E00180
+ses-010377,sub-005584,p0052021,5.0,63.0,,,,,,,1.0,1949-06-14,2013-05-02,,,40000.0,,,0,XNAT03_S00153,XNAT03_E08083
+ses-006029,sub-005575,p0052021,7.0,69.0,,0.0,,14.70000000000000,,"[4, 5]",1.0,1941-01-20,2010-02-26,,-93.0,-28.0,,"JUICIO JUICIO carcinoma de próstata de alto riesgo con sospecha de localmente avanzado
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 0, 1000, <NUM> y 2000.
+
+HALLAZGOS:
+
+Calidad de imagen: Satisfactorio
+
+MORFOLOGÍA:
+Próstata de mediano tamaño
+Tamaño: 49 x 36 x 44 mm (T, AP y CC)
+Volumen: 40 cc
+
+<NAME> cT:
+Zona periférica: PI-RADS 5 que afecta la próstata izquierda en su conjunto con extensión a la ZT con marcada restricción en la difusión con ADC de 0,6 en la porción apical del tumor.
+PI-RADS 4 en próstata media derecha
+
+Glándula central: lóbulo izquierdo infiltrado por tumor
+
+Extensión extracapsular: SI
+
+Afectación del paquete vasculonervioso periprostático: SI
+
+Afectación de vesícula seminales: NO. Retracción de la VSI por fibrosis en vecindad de la anastomosis T-T rectal
+
+Cuello de la vejiga: Normal
+Esfínter distal: Normal
+
+<NAME> cN:
+Ganglios linfáticos: adenopatías inguinal izquierda tumoral de 1 cm. Adenopatía probablemente tumoral de 1 cm en cadena iliaca externa derecha.
+Tumoración ganglionar de 48x32 mm en territorio de la AMI a la que infiltra, descrita en TC, a valorar origen prostático o rectal dada la coexistencia de neoplasia rectal intervenida, visualizando en el momento actual engrosamiento nodular de 15 mm en la pared lateral izquierdo del recto a la altura de la anastomosis, a descartar recidiva local y ganglionar
+
+Hueso: metástasis en hueso iliaco bilateral y rama púbica izquierda
+
+
+CONCLUSIÓN:
+PI-RADS 5 ZP izquierda con extensión extracapsular y neurovascular. PI-RADS 4 D-M-pzpm. Diseminación ganglionar y ósea
+Valorar anastomosis rectal por posible recidiva local.
+
+",1,XNAT03_S00227,XNAT03_E00266
+ses-006160,sub-005690,p0052021,7.0,73.0,,1.0,,6.370000000000000,25.3344,[4],1.0,1938-02-19,2011-03-26,,-141.0,-3.0,"40 x 29 x 42 mm (T, AP y CC)
+Volumen: <FECHA","JUICIO JUICIO Ca de próstata Gleason 3+4
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 0, 1000, <NUM> y 2000.
+
+HALLAZGOS:
+
+Calidad de imagen:  Satisfactorio
+
+MORFOLOGÍA:
+Próstata pequeña
+Tamaño: 40 x 29 x 42 mm (T, AP y CC)
+Volumen: <FECHA> cc
+
+<NAME> cT:
+Zona periférica: foco de baja señal en las imágenes potenciadas en T2 que presenta claros signos de restricción en DWI y realce precoz tras la administración de contraste, de 12 mm de diámetro en próstata medio apical derecha con encuadrable en la categoría PI-RADS 4.
+
+Glándula central: normal sin focos de sospechosos de CCS
+
+Extensión extracapsular: NO
+
+Afectación del paquete vasculonervioso periprostático: NO
+
+Afectación de vesícula seminales: NO
+
+Cuello de la vejiga: Normal
+Esfínter distal: Normal
+
+<NAME> cN:
+Ganglios linfáticos: no se observan adenopatías locorregionales
+
+Hueso: sin lesiones agresivas
+
+
+CONCLUSIÓN: PI-RADS 4 D-M/A-pzpl
+
+",1,XNAT03_S00313,XNAT03_E00358
+ses-006121,sub-005657,p0052021,7.0,62.0,,1.0,,7.710000000000000,68.0,[3],1.0,1948-07-16,2010-07-27,,-98.0,-88.0,"57 x 42 x 55 mm (T, AP y CC)
+Volumen: 68 cc
+
+<NAME> cT:","JUICIO JUICIO Diagnosticada de cáncer de próstata de muy bajo riesgo. Estudio previo a vigilancia activa.
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 0, 1000, <NUM> y 2000.
+
+HALLAZGOS:
+
+Calidad de imagen:  Satisfactorio
+
+MORFOLOGÍA:
+Próstata moderadamente hipertrófica
+Tamaño: 57 x 42 x 55 mm (T, AP y CC)
+Volumen: 68 cc
+
+<NAME> cT:
+Zona periférica: ligera pérdida de volumen de la ZP apical izquierda con retracción capsular, donde se observa foco de moderada hiperseñal en DWi y moderada hiposeñal en ADC, que no realza precozmente tras la administración de contraste, por tanto, encuadrable en la categoría PI-RADS 3 (incierta probabilidad de CCS). Morfológicamente parece área de prostatitis.
+
+Glándula central: <NAME> sin focos sospechosos de CCS
+
+Extensión extracapsular: NO
+
+Afectación del paquete vasculonervioso periprostático: NO
+
+Afectación de vesícula seminales: NO
+
+Cuello de la vejiga: Normal
+Esfínter distal: Normal
+
+<NAME> cN:
+Ganglios linfáticos: sin evidencia de adenopatías locorregionales
+
+Hueso: sin lesiones agresivas
+
+
+CONCLUSIÓN: PI-RADS 3 I-A-Pzpm
+
+",1,XNAT03_S00400,XNAT03_E00470
+ses-006490,sub-005981,p0052021,5.0,66.0,,,,6.730000000000000,48.074000000000005,"[3, 4]",1.0,1952-07-29,2019-07-27,,-190.0,322.0,"ejes máximos de 50 x 43 x 43 mm (transversal, anteroposterior, craneocaudal),","INDICACIÓN:
+Elevación del PSA. Valoración para biopsia guiada..
+TÉCNICA:
+RM prostática con administración de CIV (Dotarem a dosis de 0'2 ml/Kg de peso del paciente). Estudio dinámico de perfusion durante 5 min. Secuencias de difusión con b: 0, 1000 y 1400, Obteniendo posteriormente valores de forma sintética.
+HALLAZGOS:
+La próstata presenta unos ejes máximos de 50 x 43 x 43 mm (transversal, anteroposterior, craneocaudal), y un volumen de 48cc.
+No se aprecia impronta del LM en el suelo de la vejiga.
+No se visualizan restos hemáticos.
+Zona periférica:
+Lesión de 12 mm de diámetro transversal máximo localizado en vertiente posterolateral de lóbulo prostático izquierdo, que muestra significativa restricción ala difusión y presenta comportamiento hipervascular, PI-RADS 4. Condiciona abombamiento del contorno en glandular, Con signos de infiltración de la cápsula y colapso parcial del ángulo rectoprostático, no objetivando claramente afectación de la bandeleta vasculonerviosa.
+Zona transicional:
+Aspecto heterogénea por hiperplasia benigna de próstata, visualizando múltiples pequeñas lesiones quísticas y zonas pseudonodulares de hipointensidad de señal. Estas lesiones, en el estudio de perfusión así como de difusión no sugieren la presencia de tejido tumoral viable. PIRADS 3
+Vesículas seminales de morfología y señal normal, sin signos de infiltración.
+No se observan adenopatías en los territorios ganglionares estudiados.
+No existen alteraciones que indiquen la presencia de metástasis.
+CONCLUSIÓN:
+Lesión PI-RADS cuarto en zona periférica de lóbulo izquierdo con signos de afectación de la cápsula glandular.
+",1,XNAT03_S00432,XNAT03_E00505
+ses-006385,sub-005891,p0052021,7.0,63.0,,1.0,,10.85000000000000,66.4,[4],1.0,1953-03-14,2016-08-26,,-9.0,442.0,"4 x 6,07 x 5,35cm (T, AP y CC)
+Volumen: 66,4  cc
+
+PIRADS(v2):
+Zona periférica","DATOS CLÍNICOS:   Ca de prostata. Vigilancia activa.
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusion durante 5 min. Secuencias de difusión con b: 0, 1000 y 2000.
+Se compara con estudio previo de 21/08/2017.
+
+HALLAZGOS:
+
+Calidad de imagen:  Satisfactorio
+MORFOLOGÍA:
+Próstata homogénea y con hipertrofia
+Tamaño:  4 x 6,07 x 5,35cm (T, AP y CC)
+Volumen: 66,4  cc
+
+PIRADS(v2):
+Zona periférica:
+-  Minimo aumneto de foco de   unos 10  mm  ( previo 9 mm) , localizado en segmento Pzpm-A-I, que restringe la DWI, con ADC bajo y presenta señal baja en T2, y presenta minima hipercaptacion del contraste sugestivo de lesión PI-RADS 4.
+- Persiste sin cambios  pequeño foco  PZpl-M- I de  3 mm,  PI-RADS 4.
+Pequeños restos hemáticos en la zona periférica derecha en relación con biopsia previa.
+
+Zona transición:  Heterogénea, sin lesiones sospechosas
+
+Extensión extracapsular: NO
+
+Afectación del paquete vasculonervioso periprostático: NO
+
+Afectación de vesícula seminales: NO
+Cuello de la vejiga: Normal
+Esfínter distal: Normal
+
+AFECTACIÓN GANGLIONAR:  NO
+
+CONCLUSIÓN:
+Sin cmabios significativos respecto al  control previo.
+Dos lesiones  PI-RADS 4 : una de 3 mm localizada en PZpl-M- I  y otra de 9mm en PZpm-A-I. No signos de infiltración extracapsular. No adenopatías sospechosas.
+
+
+",1,XNAT03_S00510,XNAT03_E00591
+ses-006343,sub-005854,p0052021,7.0,62.0,,2.0,,6.550000000000000,46.0,,1.0,1955-10-04,2018-09-11,,-36.0,474.0,"Tamaño: De dimensiones máximas  5 cm de eje transverso x 4.2 cm de eje anteroposterior x  4.2 cm de eje craneocaudal.
+Volumen:  46 cc.
+
+DESCRIPCIÓN:","
+
+JUICIO JUICIO PSA progresivamente elevado con antecedente de dos biopsias previas negativas.
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 1000, <NUM> y 2000.
+Calidad de imagen: Satisfactorio
+
+HALLAZGOS:
+MORFOLOGÍA:
+Próstata
+Tamaño: De dimensiones máximas  5 cm de eje transverso x 4.2 cm de eje anteroposterior x  4.2 cm de eje craneocaudal.
+Volumen:  46 cc.
+
+DESCRIPCIÓN:
+
+En el estudio en secuencia potenciada en T1 no se evidencian restos hemáticos.
+
+PIRADS(v2):
+El estudio en secuencia convencional potenciada en T2 no muestra áreas con hipointensidad de señal o  alteraciones en secuencias funcionales sospechosas de tumor clínicamente significativo en zona periférica.
+En la zona de transición en vertiente craneal y anterior se identifica área prominente nodular aparentemente bien delimitada con intensidad de señal intermedia en T2 y discreta restricción de la difusión, plantea el diagnóstico diferencial entre nódulo de hiperplasia versus lesión PI-TRADS 3 (riesgo intermedio de tumor clínicamente significativo) . Por tanto, a valorar en función de criterios clínicos y analíticos valorar la posiblidad de seguimiento y control con RM próstata vs en caso de requerir biopsia, realizar biopsia dirigida a dicha zona.
+Vesículas seminales de morfología e intensidad señal conservada.
+No se identifican adenopatías pélvicas de tamaño significativo.
+Las estructuras óseas visualizadas no muestran alteraciones de interés.
+Vejiga y recto sin hallazgos a reseñar en esta exploración.
+Se identifica dilatación venosa prominente en veriente izquierda del recto por grasa mesorrectal izquierda que se dirige hacia plexo hipogástrico ipsilateral.
+
+CONCLUSIÓN:
+
+En zona de transición craneal y anterior área prominente nodular que plantea el diagnóstico diferencial entre nódulo de hiperplasia versus lesión PI-TRADS 3 (riesgo intermedio de tumor clínicamente significativo) . Por tanto, a valorar en función de criterios clínicos y analíticos la posiblidad de seguimiento analítico y control con RM próstata vs en caso de requerir biopsia, realizar biopsia dirigida a dicha zona.
+Como hallazgo casual, se identifica dilatación venosa prominente en veriente izquierda del recto por grasa mesorrectal izquierda que se dirige hacia plexo hipogástrico ipsilateral.
+",1,XNAT03_S00527,XNAT03_E00608
+ses-006367,sub-005874,p0052021,5.0,66.0,,,,,11.897600000000002,"[3, 4, 5]",1.0,1951-10-15,2018-07-26,,,73.0,"ejes máximos de 44 x 20 x 26 mm (transversal, anteroposterior, craneocaudal),","INDICACIÓN:
+Paciente tratado con braquiterapia en <FECHA>. Recidiva posterior y. Captación en lóbulo izquierdo en PET TAC. Valoración para rescate
+TÉCNICA:
+RM prostática con administración de CIV (Dotarem a dosis de 0'2 ml/Kg de peso del paciente). Estudio dinámico de perfusion durante 5 min. Secuencias de difusión con b: 0, 1000 y 1400, Obteniendo posteriormente valores de forma sintética.
+HALLAZGOS:
+La próstata presenta unos ejes máximos de 44 x 20 x 26 mm (transversal, anteroposterior, craneocaudal), y un volumen de 11 cc. Se aprecia impronta del LM en el suelo de la vejiga.
+No se visualizan restos hemáticos.
+Cambios secundarios a tratamiento dada la existencia de semillas intraprostáticas que condicionan importante artefacto metálico fundamentalmente en las secuencias de perfusión y de difusión, Lo que dificulta enormemente su valoración.
+Zona periférica:
+No se observan lesiones nodulares ni áreas de alteración de la difusión, si bien su señal es homogéneamente hipointensa. PIRADS 3
+Zona transicional:
+Aspecto homogéneamente hipointenso, no visualizando lesiones que sugieren la presencia de tejido tumoral viable. PIRADS 3
+No se observa afectación de la cápsula glandular, colapso del ángulo recto prostático, afectación del paquete vasculonervioso.
+Vesículas seminales de morfología y señal normal, sin signos de infiltración.
+No se observan adenopatías en los territorios ganglionares estudiados.
+No existen alteraciones que indiquen la presencia de metástasis.
+CONCLUSIÓN:
+No se identifican lesiones cuyo comportamiento  sugieren PI-RADS 4 o 5
+",1,XNAT03_S00576,XNAT03_E00663
+ses-006505,sub-005996,p0052021,7.0,85.0,,0.0,,12.20000000000000,39.0,[4],1.0,1924-09-18,2010-07-03,,-177.0,813.0,"46 x 37 x 44 mm (T, AP y CC)
+Volumen: 39 cc
+
+<NAME> cT:","JUICIO JUICIO Ca de próstata,. Estudio de extensión
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 0, 1000, <NUM> y 2000.
+
+HALLAZGOS:
+
+Calidad de imagen:  (Satisfactorio / Subóptimo / degradado por movimiento / etc].
+
+MORFOLOGÍA:
+Próstata (homogénea/heterogénea/hipertrofia)
+Tamaño: 46 x 37 x 44 mm (T, AP y CC)
+Volumen: 39 cc
+
+<NAME> cT:
+Zona periférica: focos de hiposeñal que corresponden con focos de restricción en difusión y realce tras la administración de contraste encuadrables en la categoría PI-RADS 4 , de craneal a caudal:
+
+-6 mm en próstata media derecha
+-9 mm en próstata media derecha
+-11 mm en próstata media izquierda
+Ver imágenes fusión
+
+
+Glándula central: sin evidencia de focos sospechosos de CCS
+
+Extensión extracapsular: NO
+
+Afectación del paquete vasculonervioso periprostático: NO
+
+Afectación de vesícula seminales: NO
+
+Cuello de la vejiga: Normal
+Esfínter distal: Normal
+
+<NAME> cN:
+Ganglios linfáticos:sin evidencia de adenopatías locorregionales
+
+Hueso: sin lesiones agresivas
+
+
+CONCLUSIÓN: PI-RADS 4 M-D-Pzpl (2). PI-RADS 4 M-I Pzpl
+
+",1,XNAT03_S00577,XNAT03_E00664
+ses-006015,sub-005561,p0052021,5.0,61.0,,,,4.010000000000000,73.0,"[3, 4, 5]",1.0,1956-12-24,2018-04-22,,-189.0,-77.0,"ejes máximos de 57 x 44 x 56 mm (transversal, anteroposterior, craneocaudal), y un volumen de 73cc.","INDICACIÓN:
+Adenocarcinoma de próstata Gleason 3+3. Vigilancia activa.
+TÉCNICA:
+RM prostática con administración de CIV (Dotarem a dosis de 0'2 ml/Kg de peso del paciente). Estudio dinámico de perfusion durante 5 min. Secuencias de difusión con b: 0, 1000 y 1400, Obteniendo posteriormente valores de forma sintética.
+HALLAZGOS:
+La próstata presenta unos ejes máximos de 57 x 44 x 56 mm (transversal, anteroposterior, craneocaudal), y un volumen de 73cc.
+Se aprecia impronta del LM en el suelo de la vejiga.
+No se visualizan restos hemáticos.
+Zona periférica:
+No se observan lesiones nodulares ni áreas de alteración de la difusión, si bien su señal es heterogénea e hipointensa, fundamentalmente en proximidad a la base glandular. PIRADS 3
+Zona transicional:
+Aspecto heterogénea por hiperplasia benigna de próstata, visualizando múltiples pequeñas lesiones quísticas y zonas pseudonodulares de hipointensidad de señal. Estas lesiones, en el estudio de perfusión así como de difusión no sugieren la presencia de tejido tumoral viable. PIRADS 3
+No se observa afectación de la cápsula glandular, colapso del ángulo recto prostático, afectación del paquete vasculonervioso.
+Vesículas seminales de morfología y señal normal, sin signos de infiltración.
+No se observan adenopatías en los territorios ganglionares estudiados.
+No existen alteraciones que indiquen la presencia de metástasis.
+CONCLUSIÓN:
+No se identifican lesiones cuyo comportamiento  sugieren PI-RADS 4 o 5
+",1,XNAT03_S00642,XNAT03_E00738
+ses-007205,sub-006488,p0052021,17.0,69.0,,,,0.08200000000000000,,,1.0,1938-02-21,2008-02-02,,-134.0,-25.0,,"Numero  de  Estudio:  <NUM> 
+Apellidos y nombre: <NAME> <NAME>, <NAME>
+Fecha  de  Nacimiento:  <FECHA> 
+SIP:  <NUM>
+
+===========    Informe  del  Estudio =========== 
+
+RM PRÓSTATA, SIN/CON CONTRASTE    
+
+
+
+<NUM> DE DE Adenocarcinoma de próstata diagnosticado el <FECHA>. Recibió tratamiento solo con BAC. Ruego valoración.
+
+EXPLORACIÓN REALIZADA: RM DE PELVIS CON CONTRASTE: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusión y mapa ADC, TSE T1 previo y tras la administración de gadolinio endovenoso, con estudio de perfusión mediante LAVA GENiq, (Dotarem), se analizan curvas de captación. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristálticos intestinales). 
+
+
+INFORME
+
+Próstata de 4,45 x 4,5 x 3,50 cms de diámetros AP x T x CC. 
+La porción periférica muestra marcadamente hipointensa en la secuencia T2, de forma difusa. 
+Tras la administración de gadolinio iv y analizando las curvas de captación se aprecia una captación intensa del adenoma de características normales, sin pérdida de la morfología y simetria. En la porción periférica se aprecia una asimetría evidenciándose un nódulo en el LI de 6,4 x 4,3 x 15 mm de diámetros AP x T x CC, que muestra mayor captación de contraste que el parénquima del LD, desde la porción apical hasta la basal, con alta sospecha de corresponder a una recidiva tumoral intraglandular.
+La cápsula se muestra mal definida, aunque no se aprecia captación significativa de bandeletas ni de vesículas seminales.
+
+No se observan ganglios de aspecto patológico en cadenas iliacas.
+
+Vejiga parcialmente repleccionada,  sin alteraciones reseñables. Segmento distal de ambos uréteres de calibre normal.
+Diverticulosis de sigma
+No se observa líquido libre en la pelvis.
+Valorar estructuras óseas mediante gammagrafía
+
+
+IMPRESIÓN DEHallazgos compatibles con recidiva tumoral  intraprostática, en el LI.
+
+============================================= 
+
+Información: 
+            Fecha  del  Informe:  <FECHA>
+			Autor: <NAME> <NAME>, <NAME>
+",1,XNAT03_S02403,XNAT03_E04561
+ses-007068,sub-006488,p0052021,17.0,69.0,,,,0.08200000000000000,,,1.0,1938-02-21,2008-01-14,,-115.0,-6.0,,"Numero  de  Estudio:  <NUM> 
+Apellidos y nombre: <NAME> <NAME>, <NAME>
+Fecha  de  Nacimiento:  <FECHA> 
+SIP:  <NUM>
+
+===========    Informe  del  Estudio =========== 
+
+RM PRÓSTATA, SIN/CON CONTRASTE    
+
+
+
+<NUM> DE DE Adenocarcinoma de próstata diagnosticado el <FECHA>. Recibió tratamiento solo con BAC. Ruego valoración.
+
+EXPLORACIÓN REALIZADA: RM DE PELVIS CON CONTRASTE: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusión y mapa ADC, TSE T1 previo y tras la administración de gadolinio endovenoso, con estudio de perfusión mediante LAVA GENiq, (Dotarem), se analizan curvas de captación. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristálticos intestinales). 
+
+
+INFORME
+
+Próstata de 4,45 x 4,5 x 3,50 cms de diámetros AP x T x CC. 
+La porción periférica muestra marcadamente hipointensa en la secuencia T2, de forma difusa. 
+Tras la administración de gadolinio iv y analizando las curvas de captación se aprecia una captación intensa del adenoma de características normales, sin pérdida de la morfología y simetria. En la porción periférica se aprecia una asimetría evidenciándose un nódulo en el LI de 6,4 x 4,3 x 15 mm de diámetros AP x T x CC, que muestra mayor captación de contraste que el parénquima del LD, desde la porción apical hasta la basal, con alta sospecha de corresponder a una recidiva tumoral intraglandular.
+La cápsula se muestra mal definida, aunque no se aprecia captación significativa de bandeletas ni de vesículas seminales.
+
+No se observan ganglios de aspecto patológico en cadenas iliacas.
+
+Vejiga parcialmente repleccionada,  sin alteraciones reseñables. Segmento distal de ambos uréteres de calibre normal.
+Diverticulosis de sigma
+No se observa líquido libre en la pelvis.
+Valorar estructuras óseas mediante gammagrafía
+
+
+IMPRESIÓN DEHallazgos compatibles con recidiva tumoral  intraprostática, en el LI.
+
+============================================= 
+
+Información: 
+            Fecha  del  Informe:  <FECHA>
+			Autor: <NAME> <NAME>, <NAME>
+",1,XNAT03_S02403,XNAT03_E04718
+ses-007127,sub-006544,p0052021,17.0,74.0,,1.0,,7.489999771118164,31.48288000000001,,1.0,1939-05-29,2013-12-05,,-31.0,-2.0,"Próstata de 4,4 x  4,3 x 3,2 cms de diámetros CC x T x AP","Numero  de  Estudio:  <NUM> 
+Apellidos y nombre: SAIDALI , MAK
+Fecha  de  Nacimiento:  <FECHA> 
+SIP:  <NUM>
+
+===========    Informe  del  Estudio =========== 
+
+RM PRÓSTATA, SIN/CON CONTRASTE    
+
+
+
+MOTIVO MOTIVO MOTIVO Ca de próstata, estudio de extensión.
+
+EXPLORACIÓN REALIZADA: RM DE PRÓSTATA: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusión y mapa ADC, TSE T1 previo y tras la administración de gadolinio endovenoso, con estudio de perfusión mediante LAVA GENiq, (Dotarem), se analizan curvas de captación. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristálticos intestinales). 
+
+
+INFORME
+
+Próstata de 4,4 x  4,3 x 3,2 cms de diámetros CC x T x AP.
+La porción transicional se muestra heterogénea en relación con cambios quísticos- adenomatosos.
+La porción periférica muestra pérdida de la hiperintensidad de señal normal en la secuencia T2, en parte relacionado con abundantes restos hemáticos en ambos lóbulos. Tras la administración de gadolinio iv y analizando las curvas de captación, se aprecia una captación difusa del LD desde la región apical hasta la basal de la región lateral y anterior del LD y posterior de ambos lóbulos en la región basal, mal definido, la morfología de la curvas es tipo 3, sopechosas de malignidad.
+La cápsula se muestra conservada. Se aprecia una captación prominente y asimétrica  de plexos periprostáticos y de bandeletas, que en parte podría estar relacionado con cambios inflamatorios postbiópsias por lo que en principio son inespecíficos.
+Se aprecia una captación de la base de ambas vesículas seminales, y del ángulo vesiculo-prostático, predominantemente en el lado derecho.
+Vejiga sin alteraciones reseñables. Segmento distal de ambos uréteres de calibre normal.
+
+No se observan ganglios de aspecto patológico en cadenas iliacas.
+No se observa líquido libre en la pelvis.
+
+
+IMPRESIÓN DIAGNÓSTICA 
+
+Hallazgos con afectación neoplásica del LD, no descarto signos de extensión extracapsular, aunque presenta componente inflamatorio importante que podría condicionar falsos positivos (respecto a la afectación de las vesículas seminales). (T2b/T3b, N0).
+
+============================================= 
+
+Información: 
+            Fecha  del  Informe:  <FECHA>
+			Autor: <NAME> <NAME>, <NAME>
+ Numero  de  Estudio:  <NUM> 
+Apellidos y nombre: <NAME>, <NAME>
+Fecha  de  Nacimiento:  <FECHA> 
+SIP:  <NUM>
+
+===========    Informe  del  Estudio =========== 
+
+RM PRÓSTATA, SIN/CON CONTRASTE    
+
+
+
+MOTIVO MOTIVO MOTIVO Ca de próstata, estudio de extensión.
+
+EXPLORACIÓN REALIZADA: RM DE PRÓSTATA: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusión y mapa ADC, TSE T1 previo y tras la administración de gadolinio endovenoso, con estudio de perfusión mediante LAVA GENiq, (Dotarem), se analizan curvas de captación. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristálticos intestinales). 
+
+
+INFORME
+
+Próstata de 4,4 x  4,3 x 3,2 cms de diámetros CC x T x AP.
+La porción transicional se muestra heterogénea en relación con cambios quísticos- adenomatosos.
+La porción periférica muestra pérdida de la hiperintensidad de señal normal en la secuencia T2, en parte relacionado con abundantes restos hemáticos en ambos lóbulos. Tras la administración de gadolinio iv y analizando las curvas de captación, se aprecia una captación difusa del LD desde la región apical hasta la basal de la región lateral y anterior del LD y posterior de ambos lóbulos en la región basal, mal definido, la morfología de la curvas es tipo 3, sopechosas de malignidad.
+La cápsula se muestra conservada. Se aprecia una captación prominente y asimétrica  de plexos periprostáticos y de bandeletas, que en parte podría estar relacionado con cambios inflamatorios postbiópsias por lo que en principio son inespecíficos.
+Se aprecia una captación de la base de ambas vesículas seminales, y del ángulo vesiculo-prostático, predominantemente en el lado derecho.
+Vejiga sin alteraciones reseñables. Segmento distal de ambos uréteres de calibre normal.
+
+No se observan ganglios de aspecto patológico en cadenas iliacas.
+No se observa líquido libre en la pelvis.
+
+
+IMPRESIÓN DIAGNÓSTICA 
+
+Hallazgos con afectación neoplásica del LD, no descarto signos de extensión extracapsular, aunque presenta componente inflamatorio importante que podría condicionar falsos positivos (respecto a la afectación de las vesículas seminales). (T2b/T3b, N0).
+
+============================================= 
+
+Información: 
+            Fecha  del  Informe:  <FECHA>
+			Autor: <NAME> <NAME>, <NAME>
+",2,XNAT03_S02445,XNAT03_E04604
+ses-008236,sub-007476,p0052021,17.0,75.0,,,,3.210000000000000,73.00800000000001,,1.0,1938-12-25,2014-05-27,,-63.0,100.0,"6 x 5,2 x 4,5 cms de diÃ¡metros CC x T x AP","MOTIVO MOTIVO MOTIVO Neoplasia de prostata tratada con RT.
+
+EXPLORACIÃN REALIZADA: RM DE PRÃSTATA MULTIPARAMÃTRICA, SIN ESPECTRO: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusiÃ³n y mapa ADC, TSE T1 previo y tras la administraciÃ³n de gadolinio endovenoso, con estudio de perfusiÃ³n mediante LAVA GENiq, (Dotarem), se analizan curvas de captaciÃ³n. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristÃ¡lticos intestinales).
+
+
+INFORME
+
+PrÃ³stata de  6 x 5,2 x 4,5 cms de diÃ¡metros CC x T x AP.
+La porciÃ³n transicional se muestra heterogÃ©nea en relaciÃ³n con cambios adenomatosos .
+La porciÃ³n perifÃ©rica: En el estudio morfolÃ³gico T2 se muestra marcadamente hipointensa en relaciÃ³n con cambios crÃ³nicos. Se identifican en el estudio de perfusiÃ³n: una captaciÃ³n en la regiÃ³n basal posterior del LI de aprox 10 x 5 x 12,5 mm (T x AP x CC) y otra en la regiÃ³n media posterior del LD de 12 x 5 x 14 mm (T x AP x CC), coinciden con dos zonas de restricciÃ³n en la secuencia de difusiÃ³n. Dichos hallazgos podrian corresponder a recidiva tumoral confinado a la prÃ³stata.
+La cÃ¡psula y bandeletas neurovasculares.
+Las vesÃ­culas seminales, poco replecionadas, no captan contraste.
+No se observan ganglios de aspecto patolÃ³gico en cadenas iliacas.
+Vejiga sin alteraciones reseÃ±ables. Segmento distal de ambos urÃ©teres de calibre normal.
+No se observa lÃ­quido libre en la pelvis.
+
+IMPRESIÃN IMPRESIÃN
+
+Dichos hallazgos podrian ser compatibles con una recidiva tumoral confinado a la prÃ³stata.
+",1,XNAT03_S03067,XNAT03_E05351
+ses-008415,sub-007627,p0052021,17.0,71.0,,,,0.2600000000000000,40.239366440000005,,1.0,1945-11-04,2017-01-17,,-7.0,7.0,"3.77 (craneocaudal) por 4.13 (anteroposterior) por 4.97 (transversal),","Motivo Motivo Motivo carcinoma de próstata. Pendiente de inicio de tratamiento radioterápico.
+
+RM prostática. Se realiza sin y tras administrar contraste iv, según protocolo habitual.
+Próstata con unas dimensiones aproximadas de 3.77 (craneocaudal) por 4.13 (anteroposterior) por 4.97 (transversal), volumen aproximado de 40cc. La porción periférica se muestra uniformemente hipointensa en las secuencias T2, hallazgos compatibles con cambios crónicos/neoplasia de crecimiento difuso, sin objetivarse lesiones definidas. No hay signos de restricción de la difusión y tampoco se observan captaciones patológicas del contraste.
+Cápsula prostática íntegra. Angulos rectoprostáticos y vesiculoprostáticos conservados.
+Bandeletas y vesículas seminales de apariencia normal.
+Vejiga escasamente replecionada, de pared lisa. Uréteres distales no dilatados.
+Recto, grasa del mesorrecto y complejo esfinteriano sin alteraciones.
+No hay adenopatías pélvicas de tamaño significativo, ni líquido libre.
+
+Impresión Impresión cambios de carácter inespecífico en la porción periférica prostática. No se observan lesiones clínicamente significativas.
+",1,XNAT03_S03361,XNAT03_E05695
+ses-008664,sub-007828,p0052021,17.0,73.0,,,,,35.88,,1.0,1945-02-20,2018-07-25,,,63.0,"Próstata de 5 x 4,6 x 3 cms de diámetros CC x T x AP","MOTIVO MOTIVO MOTIVO elevación del PSA.
+
+EXPLORACIÓN REALIZADA: RM DE PRÓSTATA MULTIPARAMÉTRICA, SIN ESPECTRO: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusión y mapa ADC, TSE T1 previo y tras la administración de gadolinio endovenoso, con estudio de perfusión mediante LAVA GENiq, (Dotarem), se analizan curvas de captación. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristálticos intestinales).
+
+
+INFORME
+
+Próstata de 5 x 4,6 x 3 cms de diámetros CC x T x AP.
+La zona transicional se muestra heterogénea en relación con cambios quísticos- adenomatosos.
+La zona periférica: presenta una lesión que infiltra todo el LI y la región paramedila posterior derecha del LD, en la zona media y basal, que se muestra hipointensa en T2, muestra restricción en la secuencia de difusión (mapa ADC bajo) y captación de contraste, sospechosa de malignidad. La lesión contacta ampliamente con la cápsula, y se extiende hacia región basal de ambas vesículas seminales.
+Las bandeletas neurovasculares se muestran conservadas.
+En la lines de reflexión peritoneal se observa un pequeño nódulo de 9 mm, hipointenso en T2, no muestra restricción en difusión ni captación de contraste, por lo uqe presenta características fibrosas, (no parece implante)
+Fina lámina de líquido en la pelvis.
+Pequeño ganglio en cadena iliaca externa izquierda de 5 mm (hipointenso en T2), inespecífico. No se observan ganglios de aspecto patológico en cadenas iliacas.
+Vejiga de pared trabeculada, sin otros hallazgos reseñables.
+Segmento distal de ambos uréteres de calibre normal.
+
+
+IMPRESIÓN IMPRESIÓN
+Hallazgos altamente sugestivo de neoplasia de prostata que infiltra todo el LI y se extiende a base de ambas vesículas seminales (T3b, N0)
+",1,XNAT03_S03599,XNAT03_E05996
+ses-008979,sub-008085,p0052021,17.0,68.0,,2.0,,0.3070000000000000,,,1.0,1942-04-03,2010-08-19,,-106.0,30.0,,"Motivo de consulta: recidiva bioquímica de neoplasia de próstata.
+
+RM prostática: se realiza estudio multiparamétrico con secuencias T2 en axial, sagital y coronal, difusión con mapa ADC, estudio de perfusión y secuencia coronal T1 tardía con supresión grasa.
+Cambios de prostatectomía radical. No se observan alteraciones morfológicas en la anastomosis vesicouretral. La secuencia de difusión muestra una discreta hiperintensidad en la vertiente posterolateral izquierda de la anastomosis, sin restricción de la difusión evidente, hallazgo inespecífico. No se observan captaciones patológicas del contraste.
+Vejiga a media repleción, de pared lisa. Uréteres distales no dilatados.
+Recto, grasa del mesorrecto y complejo esfinteriano sin alteraciones.
+No hay adenopatías pélvicas significativas, ni líquido libre.
+Divertículos en sigma.
+
+Impresión diagnóstica: foco de hiperintensidad en la secuencia de difusión en la vertiente posterolateral izquierda de la anastomosis, sin correlación morfológica ni captación patológica, hallazgo inespecífico. Resto, sin alteraciones significativas.
+",1,XNAT03_S03880,XNAT03_E06338
+ses-008589,sub-007768,p0052021,17.0,69.0,,1.0,,7.060000000000000,40.513200000000005,"[3, 3, 2, 4, 4, 5, 5]",1.0,1940-08-15,2010-06-27,,-140.0,146.0,Próstata de 4.2 x 5.3 x 3.5 cm (CCxTx AP).,"INFORMACIÓN INFORMACIÓN Adenocarcinoma de próstata Gleason 6.
+
+EXPLORACIÓN REALIZADA: RM DE PRÓSTATA MULTIPARAMÉTRICA
+Se realizan cortes axiales, coronales y sagitales, empleando secuencias TSE potenciadas en T2 y T2 FS, secuencia de difusión con su respectivo mapa de ADC y TSE T1 previo y tras la administración de gadolinio endovenoso, con estudio de perfusión mediante LAVA GENiq (Dotarem), analizando las curvas de captación. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos secundarios por movimientos peristálticos intestinales).
+
+INFORME:
+
+Próstata de 4.2 x 5.3 x 3.5 cm (CCxTx AP). Volumen aproximado de 40.5 cc.
+-La zona transicional se muestra aumentada de tamaño y heterogénea, en relación con cambios quísticos-adenomatosos.
+1. En su vertiente anterior e izquierda (TZa), se aprecia nódulo redondeado, de mayor hipointensidad, mal definido, muestra marcada restricción en la secuencia de difusión, con un valor bajo en la cuantificación en el mapa  ADC. Mide aproximadamente 12,6 x 14,5 x 20 mm (APxTxCC), contacta con la cápsula, en algún punto la borra. Dichos hallazgos sugieren lesión Pirad 5.
+
+- La zona periférica presenta un grosor conservado, discretamente hipointensa de forma difusa, (probablemente relacionado en parte con cambios inflamatorios crónicos),
+1. Se identifica en la región posterior de ambos lóbulos un área de mayor hipointensidad con escasa restricción en la secuencia de difusión mal definidas, que podrían corresponder a lesiones Pirads 3.
+2. Se aprecia una pequeña lesión de 5 mm redondeada apical parauretral derecha, muestra restricción en la secuencia de difusión, compatible con lesión Pirad 4.
+Asimetría en cuanto a la captación de ambas bandeletas, siendo mayor en el lado derecho, de características inespecíficas, aunque probablemente relacionado con cambios inflamatorios, ya que persiste pequeños hematomas post biopsias en la zona periférica.
+Las vesículas seminales presentan morfología e intensidad de señal conservada.
+No se aprecian adenopatías que por su tamaño o morfología sean sospechosos.
+Vejiga de pared trabeculada. Segmento distal de ambos uréteres de calibre normal.
+No se observa líquido libre en la pelvis.
+
+IMPRESIÓN IMPRESIÓN
+
+Nódulo Pirads 5 en zona transición anterior del lóbulo izquierdo, con una probabilidad de 3/5 de afectación capsular.
+Nódulo Pirads 4 de 5 mm apical periureteral derecha.
+Lesiones Pirads 3, en zona periférica, posterior, media, de ambos lóbulos.
+Estadio T2 / T3a.
+ INFORME ORIGINAL: <NUM> FECHA: <FECHA> FIRMADO: <NUM> <NAME> <NAME>, <NAME>
+
+INFORMACIÓN INFORMACIÓN Adenocarcinoma de próstata Gleason 6.
+
+EXPLORACIÓN REALIZADA: RM DE PRÓSTATA MULTIPARAMÉTRICA
+Se realizan cortes axiales, coronales y sagitales, empleando secuencias TSE potenciadas en T2 y T2 FS, secuencia de difusión con su respectivo mapa de ADC y TSE T1 previo y tras la administración de gadolinio endovenoso, con estudio de perfusión mediante LAVA GENiq (Dotarem), analizando las curvas de captación. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos secundarios por movimientos peristálticos intestinales).
+
+INFORME:
+
+Próstata de 4.2 x 5.3 x 3.5 cm (CCxTx AP). Volumen aproximado de 40.5 cc.
+-La zona transicional se muestra aumentada de tamaño y heterogénea, en relación con cambios quísticos-adenomatosos.
+1. En su vertiente anterior e izquierda (TZa), se aprecia nódulo redondeado, de mayor hipointensidad, mal definido, muestra marcada restricción en la secuencia de difusión, con un valor bajo en la cuantificación en el mapa  ADC. Mide aproximadamente 12,6 x 14,5 x 20 mm (APxTxCC), contacta con la cápsula, en algún punto la borra. Dichos hallazgos sugieren lesión Pirad 5.
+
+- La zona periférica presenta un grosor conservado, discretamente hipointensa de forma difusa, (probablemente relacionado en parte con cambios inflamatorios crónicos),
+1. Se identifica en la región posterior de ambos lóbulos un área de mayor hipointensidad con escasa restricción en la secuencia de difusión mal definidas, que podrían corresponder a lesiones Pirads 3.
+2. Se aprecia una pequeña lesión de 5 mm redondeada apical parauretral derecha, muestra restricción en la secuencia de difusión, compatible con lesión Pirad 4.
+Asimetría en cuanto a la captación de ambas bandeletas, siendo mayor en el lado derecho, de características inespecíficas, aunque probablemente relacionado con cambios inflamatorios, ya que persiste pequeños hematomas post biopsias en la zona periférica.
+Las vesículas seminales presentan morfología e intensidad de señal conservada.
+No se aprecian adenopatías que por su tamaño o morfología sean sospechosos.
+Vejiga de pared trabeculada. Segmento distal de ambos uréteres de calibre normal.
+No se observa líquido libre en la pelvis.
+
+IMPRESIÓN IMPRESIÓN
+
+Nódulo Pirads 5 en zona transición anterior del lóbulo izquierdo, con una probabilidad de 3/5 de afectación capsular.
+Nódulo Pirads 4 de 5 mm apical periureteral derecha.
+Lesiones Pirads 3, en zona periférica, posterior, media, de ambos lóbulos.
+Estadio T2 / T3a.
+
+ANEXO: <NUM> FECHA: <FECHA> FIRMADO: <NUM> <NAME> <NAME>, <NAME>
+
+INFORMACIÓN INFORMACIÓN Adenocarcinoma de próstata Gleason 6.
+
+EXPLORACIÓN REALIZADA: RM DE PRÓSTATA MULTIPARAMÉTRICA
+Se realizan cortes axiales, coronales y sagitales, empleando secuencias TSE potenciadas en T2 y T2 FS, secuencia de difusión con su respectivo mapa de ADC y TSE T1 previo y tras la administración de gadolinio endovenoso, con estudio de perfusión mediante LAVA GENiq (Dotarem), analizando las curvas de captación. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos secundarios por movimientos peristálticos intestinales).
+
+INFORME:
+
+Próstata de 4.2 x 5.3 x 3.5 cm (CCxTx AP). Volumen aproximado de 40.5 cc.
+-La zona transicional se muestra aumentada de tamaño y heterogénea, en relación con cambios quísticos-adenomatosos.
+1. En su vertiente anterior e izquierda (TZa), se aprecia nódulo redondeado, de mayor hipointensidad, mal definido, muestra marcada restricción en la secuencia de difusión, con un valor bajo en la cuantificación en el mapa  ADC. Mide aproximadamente 12,6 x 14,5 x 20 mm (APxTxCC), contacta con la cápsula, en algún punto la borra. Dichos hallazgos sugieren lesión Pirad 5.
+
+- La zona periférica presenta un grosor conservado, discretamente hipointensa de forma difusa, (probablemente relacionado en parte con cambios inflamatorios crónicos),
+1. Se identifica en la región posterior de ambos lóbulos un área de mayor hipointensidad con escasa restricción en la secuencia de difusión mal definidas, que podrían corresponder a lesiones Pirads 3.
+2. Se aprecia una pequeña lesión de 5 mm redondeada apical parauretral derecha, muestra restricción en la secuencia de difusión, compatible con lesión Pirad 4.
+Asimetría en cuanto a la captación de ambas bandeletas, siendo mayor en el lado derecho, de características inespecíficas, aunque probablemente relacionado con cambios inflamatorios, ya que persiste pequeños hematomas post biopsias en la zona periférica.
+Las vesículas seminales presentan morfología e intensidad de señal conservada.
+No se aprecian adenopatías que por su tamaño o morfología sean sospechosos.
+Vejiga de pared trabeculada. Segmento distal de ambos uréteres de calibre normal.
+No se observa líquido libre en la pelvis.
+
+IMPRESIÓN IMPRESIÓN
+
+Nódulo Pirads 5 en zona transición anterior del lóbulo izquierdo, con afectación capsular.
+Nódulo Pirads 4 de 5 mm apical parauretral derecha.
+Lesiones Pirads 3, en zona periférica, posterior, media, de ambos lóbulos.
+Estadio T3a.
+",2,XNAT03_S03976,XNAT03_E06460
+ses-006636,sub-006110,p0052021,17.0,72.0,,0.0,,4.050000000000000,45.882720000000006,[5],1.0,1943-05-16,2016-02-25,,-7.0,152.0,"Próstata de 4,3 x 3,6 x 5,7 cm de ejes CC x AP X T","MOTIVO MOTIVO MOTIVO 72 años, PSA 4,430, libre 10 %. TR: nódulo palpable en lóbulo derecho. RM de próstata previo a biopsia.
+
+EXPLORACIÓN REALIZADA: RM DE PRÓSTATA BIPARAMÉTRICA, con pelvis: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusión y mapa ADC, TSE T1. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristálticos intestinales).
+
+INFORME
+Próstata de 4,3 x 3,6 x 5,7 cm de ejes CC x AP X T      .
+Estudio morfológico T2 y difusión:
+-La zona transicional se muestra heterogénea en relación con cambios quísticos- adenomatosos.
+-La zona periférica: se objetiva muy hiperintensa. Se visualiza a nivel del lóbulo derecho afectado a los segmento posteriores medio-basales un nódulo muy hipointenso en T2, que restringe en difusión (ADC de 5000) con un tamaño estimado de 18 x 14 x 16 mm de ejes CC x T X AP (que coincide con el tacto rectal), que rectrae la cápsula (sospecha de afectación capsular 3 sobre 5) y contacta sin infiltrar con la parte inferior de las vesículas seminales derechas
+
+Las vesículas seminales presentan un nivel con contenido más iso en la parte declive en T2 y no muy hiper en T1, pero probablemente secundario a la presencia de contenido hemático
+Numerosos gánglios en cadenas iliacas e inguinales, siendo el más prominente el localizado en cadena iliaca derecha de 6 mm
+
+Vejiga sin alteraciones reseñables.
+Segmento distal de ambos uréteres de calibre normal.
+No se observa líquido libre en la pelvis.
+
+IMPRESIÓN IMPRESIÓN
+Nódulo sospechoso PIRADS 5  en segmento medio-basal posterior del lóbulo derecho PIRADS 5. El estadiaje propuesto por RM sería T2-T3, N0 (numerosos gánglios en cadenas iliacas e inguinales).
+",1,XNAT03_S04168,XNAT03_E06691
+ses-000320,sub-000317,p0052021,5.0,67.0,,,,10.47000000000000,,,1.0,1944-08-29,2012-04-06,,-8.0,3112.0,,,0,XNAT3_S37055,XNAT3_E92100
+ses-000739,sub-000695,p0052021,5.0,55.0,,,,,,,1.0,1954-04-12,2010-03-16,,,61.0,,,0,XNAT3_S37437,XNAT3_E92518
+ses-002465,sub-000695,p0052021,5.0,61.0,,,,1.650000000000000,,,1.0,1954-04-12,2016-02-01,,-29.0,65.0,,"TECNICA: Se practican planos axiales, sagitales y coronales con secuencias potenciadas en T1, T2, estudio T2 de alta resolución; secuencias en difusión y perfusión.
+
+INFORMACION CLINICA: Exploración realizada en paciente con antecedente de prostatectomía radical y elevación de PSA.
+
+INFORME: Actualmente, ni en el estudio morfológico ni en el estudio de difusión y perfusión objetivamos imágenes que pongan de manifiesto tumor clínicamente activo.
+
+No adenopatias regionales ni retroperitoneales.
+
+No hidronefrosis.
+
+Lesiones focales hepaticas a estudio con ecografia
+
+",1,XNAT3_S37437,XNAT3_E94245
+ses-000912,sub-000849,p0052021,5.0,63.0,,,,6.390000000000000,,,1.0,1943-08-29,2006-09-15,,-123.0,100.0,,,0,XNAT3_S37591,XNAT3_E92692
+ses-000927,sub-000864,p0052021,5.0,73.0,,,,8.350000000000000,,,1.0,1937-11-23,2011-05-28,,-6.0,321.0,,,0,XNAT3_S37606,XNAT3_E92707
+ses-001466,sub-001358,p0052021,17.0,79.0,,1.0,,,10.296,,1.0,1933-11-02,2013-08-24,,,13.0,"3,3 x 2,5 x 2,4 cms de diÃ¡metros CC x T x AP","MOTIVO MOTIVO MOTIVO Adenocarcinoma de prÃ³stata Gleason 7 (4+ 3). Pendiente de valorar tratamiento con radioterapia o braquiterapia.
+
+EXPLORACIÃN REALIZADA: RM DE PRÃSTATA MULTIPARAMÃTRICA, SIN ESPECTRO: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusiÃ³n y mapa ADC, TSE T1 previo y tras la administraciÃ³n de gadolinio endovenoso, con estudio de perfusiÃ³n mediante LAVA GENiq, (Dotarem), se analizan curvas de captaciÃ³n. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristÃ¡lticos intestinales).
+
+
+INFORME
+
+PrÃ³stata de 3,3 x 2,5 x 2,4 cms de diÃ¡metros CC x T x AP.
+PorciÃ³n transicional de pequeÃ±o tamaÃ±o, valorar cambios relacionados con RTU.
+Estudio morfolÃ³gico T2: La porciÃ³n perifÃ©rica se muestra marcadamente hipointensa, asÃ­ como las vesÃ­culas seminales.
+Estudio de perfusiÃ³n: Escasa captaciÃ³n de la regiÃ³n perifÃ©rica y progresiva.
+DifusiÃ³n: muestra restricciÃ³n en la secuencia de difusiÃ³n de forma difusa la prÃ³stata y las vesÃ­culas seminales
+La cÃ¡psula mal definida, sobre todo en la regiÃ³n basal.
+Las vesÃ­culas seminales, pequeÃ±as e hipointensas en T2
+Una adenopatÃ­a de 5 mm adyacente a la vesÃ­cula seminal derecha, inespecÃ­fica
+PequeÃ±os ganglios en cadenas iliacas de caracterÃ­sticas inespecÃ­ficas.
+Vejiga replecionada,  sin alteraciones reseÃ±ables. Segmento distal de ambos urÃ©teres de calibre normal.
+No se observa lÃ­quido libre en la pelvis.
+
+IMPRESIÃN IMPRESIÃN
+
+Prostata de pequeÃ±o tamaÃ±o, dichos hallazgos podrÃ­an estar en relaciÃ³n con adenocarcinoma de prÃ³stata de alto grado que afecta difusamentea toda la prÃ³stata y vesÃ­culas seminales, valorando la secuencia T2 y la difusiÃ³n ya que apenas muestra captaciÃ³n de contraste en el estudio de perfusiÃ³n (correlacionar con antecedente de tratamiento de bloqueo hormonal...).
+PequeÃ±os ganglios en cadenas iliacas y uno adyacente a la vesÃ­cula seminal derecha inespecÃ­ficos.
+",1,XNAT3_S38109,XNAT3_E93246
+ses-001481,sub-001372,p0052021,17.0,65.0,,1.0,,6.440000000000000,16.64,,1.0,1945-09-18,2011-07-13,,-111.0,1903.0,"dimensiones aproximadas de 5,12 (crÃ¡neocaudal) por <FECHA> (anteroposterior) por 6,25 (transversal) cms,","Motivo Motivo Motivo elevaciÃ³n del PSA con dos biopsias previas negativas.
+
+RM prostÃ¡tica: con contraste iv (dotarem, lote16GDO72AO2).
+PrÃ³stata con unas dimensiones aproximadas de 5,12 (crÃ¡neocaudal) por <FECHA> (anteroposterior) por 6,25 (transversal) cms, volumen estimado de 80,53 cc. Presenta un crecimiento a expensas de la porciÃ³n transicional, adenomatosa. La prÃ³stata perifÃ©rica muestra Ã¡reas de hipointensidad de seÃ±al T2, de predominio en la base, por probables cambios crÃ³nicos. No se observan nÃ³dulos definidos en las secuencias morfolÃ³gicas, signos de restricciÃ³n de la difusiÃ³n ni captaciones patolÃ³gicas tras la administraciÃ³n del contraste.
+CÃ¡psula Ã­ntegra. Angulos rectoprostÃ¡ticos y vesÃ­culoprostÃ¡ticos conservados.
+Bandeletas y vesÃ­culas seminales de apariencia normal.
+Vejiga a media repleciÃ³n, de pared lisa. UrÃ©teres distales no dilatados.
+Recto, grasa del mesorrecto y complejo esfinteriano sin alteraciones.
+No se observan adenopatÃ­as pÃ©lvicas de tamaÃ±o significativo.
+No hay lÃ­quido libre.
+
+ImpresiÃ³n diagnÃ³stica: hipertrofia prostÃ¡tica. No se identifican lesiones sospechosas.
+",1,XNAT3_S38124,XNAT3_E93261
+ses-001495,sub-001385,p0052021,17.0,58.0,,1.0,,6.190000057220459,21.84,,1.0,1957-08-16,2015-11-19,,-77.0,83.0,"3,5 x 4 x 3 cms de diÃ¡metros CC x T x AP","Numero  de  Estudio:  <NUM> 
+Apellidos y nombre: <NAME> <NAME>, <NAME>
+Fecha  de  Nacimiento:  <FECHA> 
+SIP:  <NUM>
+
+===========    Informe  del  Estudio =========== 
+
+RM PRÓSTATA, SIN/CON CONTRASTE    
+
+
+
+MOTIVO MOTIVO MOTIVO Adenocarcinoma de próstata bilateral.
+
+EXPLORACIÓN REALIZADA: RM DE PELVIS CON CONTRASTE: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusión y mapa ADC, TSE T1 previo y tras la administración de gadolinio endovenoso, con estudio de perfusión mediante LAVA GENiq, (Dotarem Lote  ), se analizan curvas de captación. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristálticos intestinales). 
+
+
+INFORME
+
+Próstata de 3,5 x 4 x 3 cms de diámetros CC x T x AP.
+La porción transicional se muestra heterogénea en relación con cambios quísticos- adenomatosos, de pequeño tamaño. No se identifican nódulos sospechosos.
+En la La porción periférica se aprecia una pérdida de la hiperintensidad de señal normal en la secuencia T2, mayor en el LD, asocia retracción de la cápsula en el LD.
+En el estudio de perfusión se aprecia una captación de margenes irregulares, en la región apical es posterior abarcando a ambos lóbulos, y en la región media y basal la captación es mayor en el LD, (mide 2,8 cms de diámetro CC). la captación presenta una morfología tipo 2.
+La secuencia de difusión se correlaciona con los hallazgos previamente descrito, el mapa ADC es intermedio. por lo que se correlaciona con un grado medio tumoral. 
+La cápsula en el LD se encuentra mal definida, retraida, con prominencia de las bandeletas, este hallazgos podría estar en relación con los cambios postbiópsia, y no deberse al tumor.
+
+Las vesículas seminales, presentan morfología e intensidad de señal conservada.
+
+No se observan ganglios de aspecto patológico en cadenas iliacas.
+
+Vejiga parcialmente repleccionada,  sin alteraciones reseñables. Segmento distal de ambos uréteres de calibre normal.
+No se observa líquido libre en la pelvis.
+Pequeña hernia inguinal izquierda que contiene grasa.
+
+IMPRESIÓN DIAGNÓSTICA  
+Hallazgos compatibles con afectación de ambos lóbulos, sobre todo del LD (T2c, N0), con patrón mas de infiltración que nodular. No se identifican claros signos de extensión extracapsular, ni se identifican otras lesiones que se sugiera de mayor agresividad.
+
+============================================= 
+
+Información: 
+            Fecha  del  Informe:  <DIR><NAME><FECHA>
+			Autor: <NAME> <NAME>, <NAME>
+ 
+
+MOTIVO MOTIVO MOTIVO Adenocarcinoma de prÃ³stata bilateral.
+
+EXPLORACIÃN REALIZADA: RM DE PELVIS CON CONTRASTE: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusiÃ³n y mapa ADC, TSE T1 previo y tras la administraciÃ³n de gadolinio endovenoso, con estudio de perfusiÃ³n mediante LAVA GENiq, (Dotarem Lote  ), se analizan curvas de captaciÃ³n. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristÃ¡lticos intestinales).
+
+
+INFORME
+
+PrÃ³stata de 3,5 x 4 x 3 cms de diÃ¡metros CC x T x AP.
+La porciÃ³n transicional se muestra heterogÃ©nea en relaciÃ³n con cambios quÃ­sticos- adenomatosos, de pequeÃ±o tamaÃ±o. No se identifican nÃ³dulos sospechosos.
+En la La porciÃ³n perifÃ©rica se aprecia una pÃ©rdida de la hiperintensidad de seÃ±al normal en la secuencia T2, mayor en el LD, asocia retracciÃ³n de la cÃ¡psula en el LD.
+En el estudio de perfusiÃ³n se aprecia una captaciÃ³n de margenes irregulares, en la regiÃ³n apical es posterior abarcando a ambos lÃ³bulos, y en la regiÃ³n media y basal la captaciÃ³n es mayor en el LD, (mide 2,8 cms de diÃ¡metro CC). la captaciÃ³n presenta una morfologÃ­a tipo 2.
+La secuencia de difusiÃ³n se correlaciona con los hallazgos previamente descrito, el mapa ADC es intermedio. por lo que se correlaciona con un grado medio tumoral.
+La cÃ¡psula en el LD se encuentra mal definida, retraida, con prominencia de las bandeletas, este hallazgos podrÃ­a estar en relaciÃ³n con los cambios postbiÃ³psia, y no deberse al tumor.
+
+Las vesÃ­culas seminales, presentan morfologÃ­a e intensidad de seÃ±al conservada.
+
+No se observan ganglios de aspecto patolÃ³gico en cadenas iliacas.
+
+Vejiga parcialmente repleccionada,  sin alteraciones reseÃ±ables. Segmento distal de ambos urÃ©teres de calibre normal.
+No se observa lÃ­quido libre en la pelvis.
+PequeÃ±a hernia inguinal izquierda que contiene grasa.
+
+IMPRESIÃN IMPRESIÃN
+Hallazgos compatibles con afectaciÃ³n de ambos lÃ³bulos, sobre todo del LD (T2c, N0), con patrÃ³n mas de infiltraciÃ³n que nodular. No se identifican claros signos de extensiÃ³n extracapsular, ni se identifican otras lesiones que se sugiera de mayor agresividad.
+",2,XNAT3_S38137,XNAT3_E93275
+ses-001550,sub-001436,p0052021,17.0,59.0,,1.0,,5.769999980926514,23.01104,"[4, 5]",1.0,1954-04-28,2013-08-23,,-30.0,89.0,"3,7 x 4,6 x 2,6 cms de diÃ¡metros CC x T x AP","
+
+MOTIVO MOTIVO MOTIVO ElevaciÃ³n del PSA .adenocarcinoma de  prÃ³stata,Gleason 3+4
+
+EXPLORACIÃN REALIZADA: RM DE PRÃSTATA MULTIPARAMÃTRICA, SIN ESPECTRO: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusiÃ³n y mapa ADC, TSE T1 previo y tras la administraciÃ³n de gadolinio endovenoso, con estudio de perfusiÃ³n mediante LAVA GENiq, (Dotarem), se analizan curvas de captaciÃ³n. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristÃ¡lticos intestinales).
+
+
+INFORME
+
+PrÃ³stata de 3,7 x 4,6 x 2,6 cms de diÃ¡metros CC x T x AP.       .
+.
+Estudio morfolÃ³gico T2: La porciÃ³n transicional se muestra heterogÃ©nea en relaciÃ³n con cambios quÃ­sticos- adenomatosos. La porciÃ³n perifÃ©rica es  hipointensa en parte relacionado con cambios cÃ³nicos, disminuye la detecciÃ³n de tumores de bajo grado. Se aprecia de mayor hipointensidad un nÃ³dulo en la regiÃ³n apical del LD en contacto con la cÃ¡psula, parece protruir discretamente.
+DifusiÃ³n: Se aprecia un nÃ³dulo en la regiÃ³n muy apical del LII, de 1 cm aprox. que muestra restricciÃ³n (factor b alto), que podria correlacionarse con la biÃ³psia gleason 7.
+Estudio de perfusiÃ³n: Se aprecia una captaciÃ³n precoz con lavado progresivo del nÃ³dulo de la regiÃ³n apical del LI, contacta ampliamente con la cÃ¡psula. Se identifica una discreta captaciÃ³n progresiva de la regiÃ³n apical del LD, y de la zona media de ambos lÃ³bulos de caracteristicas inespecÃ­ficas.
+Por lo demÃ¡s la cÃ¡psula, y seudocÃ¡psula se muestran conservados.
+Las vesÃ­culas seminales, presentan morfologÃ­a e intensidad de seÃ±al conservada.
+
+No se observan ganglios de aspecto patolÃ³gico en cadenas iliacas.
+
+Vejiga repleccionada,  sin alteraciones reseÃ±ables. Segmento distal de ambos urÃ©teres de calibre normal.
+No se observa lÃ­quido libre en la pelvis.
+
+
+IMPRESIÃN IMPRESIÃN
+Se identifica un nÃ³dulo de 1 cm, en el segmento 12p (muy apical del LII), Pi-rads 4-5. No se observan claros signos de extensiÃ³n extraglandular.
+",1,XNAT3_S38189,XNAT3_E93330
+ses-001878,sub-001738,p0052021,17.0,72.0,,,,5.840000000000000,30.0074736,,1.0,1938-10-30,2011-09-16,,-157.0,109.0,"PrÃ³stata con unas dimensiones aproximadas de 3,17 (crÃ¡neocaudal) por 4,92 (transversal) por 3,7 (anteroposterior) cms,","Motivo de consulta: neoplasia de prÃ³stata. EstadificaciÃ³n local.
+
+RM prostÃ¡tica. Se realiza sin y tras administrar contraste iv, segÃºn protocolo habitual.
+PrÃ³stata con unas dimensiones aproximadas de 3,17 (crÃ¡neocaudal) por 4,92 (transversal) por 3,7 (anteroposterior) cms, volumen estimado de 30cc. Cambios secundarios a RTU. PrÃ³stata perifÃ©rica con focos de hipointensidad T2 dispersos, atribuÃ­bles a cambios crÃ³nicos. Se objetiva un nÃ³dulo de aproximadamente dos centÃ­metros que afecta a gran parte del lÃ³bulo perifÃ©rico izdo, en zonas basal y media, segmentos 8a, 8p, 10a y 10p, marcadamente hipointenso en las secuencias T2, muestra signos de restricciÃ³n de la difusiÃ³n y presenta un realce mayor que el resto del parÃ©nquima, con unas curvas de tipo 2, de moderada sospecha. Estos hallazgos son compatibles con neoplasia.
+CÃ¡psula Ã­ntegra. Angulos rectoprostÃ¡ticos y vesÃ­culoprostÃ¡ticos conservados.
+Bandeletas y vesÃ­culas seminales de apariencia normal.
+Vejiga escasamente replecionada, de pared lisa. UrÃ©teres distales no dilatados.
+Recto, grasa del mesorrecto y complejo esfinteriano sin alteraciones.
+No hay adenopatÃ­as pÃ©lvicas de tamaÃ±o significativo.
+PequeÃ±a cantidad de lÃ­quido libre entre asas.
+
+ImpresiÃ³n diagnÃ³stica: los hallazgos radiolÃ³gicos son compatibles con neoplasia de prÃ³stata. EstadificaciÃ³n local: T2b, N0.
+",1,XNAT3_S38499,XNAT3_E93658
+ses-007174,sub-001778,p0052021,17.0,72.0,,,,5.349999904632568,22.433840000000004,,1.0,1941-02-01,2013-11-11,,-129.0,13.0,"Próstata con unas dimensiones aproximadas de 3,7 (craneocaudal), por 2,2 (anteroposterior) por 5,3) trasversal) centímetros.","Numero  de  Estudio:  <NUM> 
+Apellidos y nombre: <NAME> <NAME>, <NAME> <NAME>
+Fecha  de  Nacimiento:  <FECHA> 
+SIP:  <NUM>
+
+===========    Informe  del  Estudio =========== 
+
+RM PRÓSTATA, SIN/CON CONTRASTE    
+
+
+
+Motivo de consulta: Carcinoma de próstata Gleason 6 en un cilindro. Se solicita estudio para valoración de vigilancia activa.
+
+RM prostática: se realizan cortes axiales, sagitales y coronales T2, secuencia de difusión con mapa ADC y estudio dinámico tras administrar contraste iv (dotarem, lote15GDOO9A) con análisis de las curvas de captación y secuencia T1 coronal tardía con supresión de la grasa.
+Próstata con unas dimensiones aproximadas de 3,7 (craneocaudal), por 2,2 (anteroposterior) por 5,3) trasversal) centímetros. Hipointensidad parcheada y difusa que afecta a la porción periférica, compatible con cambios de prostatitis crónica, sin poder descartar algún foco de neoplasia. Las secuencias de difusión no muestran áreas de restricción. Tras la administración de CIV no se objetivan captaciones patológicas, siendo el realce de las zonas analizadas progresivo, con curvas de tipo I de baja sospecha.
+La cápsula prostática se muestra íntegra. Vesículas seminales atróficas. Ángulos rectoprostáticos y vesículoprostáticos conservados. Manguitos neurovasculares de apariencia normal.
+Vejiga escasamente replecionada. Discreta ectasia de ambos uréteres distales, probablemente no significativa.
+Recto, grasa del mesorrecto y complejo esfinteriano sin alteraciones.
+No hay adenopatías pélvicas de tamaño patológico.
+
+Impresión diagnóstica: Neoplasia de próstata. Estadificación radiológica: T 1-2, N0.
+
+============================================= 
+
+Información: 
+            Fecha  del  Informe:  <FECHA>
+			Autor: <NAME> <NAME>, <NAME>
+",1,XNAT3_S38542,XNAT03_E04637
+ses-001926,sub-001778,p0052021,17.0,73.0,,,,6.039999961853027,26.9568,,1.0,1941-02-01,2014-07-01,,-44.0,-37.0,"3,6 x 4,5 x 3,2 cms de diÃ¡metros CC x T x AP","
+MOTIVO MOTIVO MOTIVO adenocarcinoma de prÃ³stata Gleason 3+3, pendiente de RT.
+
+EXPLORACIÃN REALIZADA: RM DE PRÃSTATA MULTIPARAMÃTRICA, SIN ESPECTRO: Se realizan cortes axiales coronales y sagitales, empleando secuencias TSE potenciadas en TSE T2, T2 FS, secuencia de difusiÃ³n y mapa ADC, TSE T1 previo y tras la administraciÃ³n de gadolinio endovenoso, con estudio de perfusiÃ³n mediante LAVA GENiq, (Dotarem), se analizan curvas de captaciÃ³n. Se administra 1 amp. de buscapina IV previo al estudio (con el fin de disminuir artefactos por movimientos peristÃ¡lticos intestinales).
+
+
+INFORME
+
+PrÃ³stata de  3,6 x 4,5 x 3,2 cms de diÃ¡metros CC x T x AP.
+Estudio morfolÃ³gico T2: La porciÃ³n transicional se muestra heterogÃ©nea en relaciÃ³n con cambios quÃ­sticos- adenomatosos, la porciÃ³n perifÃ©rica es hipointensa en T2, en parte relacionado con cambios crÃ³nicos.
+Se identifican varios focos de restricciÃ³n en la secuencia de difusiÃ³n de pocos milÃ­metros en la regiÃ³n apical y media en ambos lÃ³bulos, el de mayor tamaÃ±o es anterior de la zona central en el LI, de 16 x 11 mm, se extiende a la regiÃ³n basal (el Ãºnico que se correlaciona con la biÃ³psia). No se aprecian cambios reseÃ±ables respecto a la difusiÃ³n en el estudio previo.
+Estudio de perfusiÃ³n: CaptaciÃ³n heterogÃ©nea de la porciÃ³n transicional. Se identifica una captaciÃ³n nodular perifÃ©rica en la regiÃ³n media del LD de 9 x 5 x 10 mm de diÃ¡metros T x AP x CC, aunque las captaciones son progresivas, similar al estudio previo.
+La cÃ¡psula y bandeletas neurovasculares se muestran conservadas.
+Las vesÃ­culas seminales atrÃ³ficas, sin otros hallazgos
+No se observan ganglios de aspecto patolÃ³gico en cadenas iliacas.
+Vejiga  replecionada,  algo trabeculada, sin otros hallazgos reseÃ±ables. Segmento distal de ambos urÃ©teres de calibre normal.
+No se observa lÃ­quido libre en la pelvis.
+Hernia inguinoescrotal bilateral, mayor la izquierda, contienen grasa.
+
+
+IMPRESIÃN IMPRESIÃN
+
+No se identifican signos de extensiÃ³n extraglandular, ni cambios reseÃ±ables respecto al estudio previo.
+",1,XNAT3_S38542,XNAT3_E93706
+ses-002027,sub-001867,p0052021,17.0,73.0,,2.0,,0.3730000000000000,,,1.0,1936-09-02,2010-03-03,,-14.0,-19.0,,,0,XNAT3_S38633,XNAT3_E93807
+ses-002080,sub-001915,p0052021,7.0,62.0,,1.0,,4.900000000000000,40.0,"[4, 5]",1.0,1954-10-02,2017-04-23,,-134.0,64.0,"3,7 x 5,2 x  4 cm (T, AP y CC)
+Volumen:  40 cc ( hipertrofía grado II)
+
+PIRADS(v2):
+Zona periférica:  Heterogenea,","TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusion durante 5 min. Secuencias de difusión con b: 0, 1000 y 2000.
+HALLAZGOS:
+
+Calidad de imagen:  (Satisfactorio / Subóptimo / degradado por movimiento / etc].
+
+MORFOLOGÍA:
+Próstata heterogénea
+Tamaño:  3,7 x 5,2 x  4 cm (T, AP y CC)
+Volumen:  40 cc ( hipertrofía grado II)
+
+PIRADS(v2):
+Zona periférica:  Heterogenea, con minimos restos hemáticos posteriores.
+
+Destacando tres áreas hipointensas en T2 y con restricción de la difusión:
+- Una localizada en segmento postero-lateral  apical derecho ( PZ-PL),  mide  11mm ( Pi-RADS 4)
+-  Otra  predominantemente en el segmento postero-medial medio izquierdo de 10 mm ( PZpm)   ( PI-RADS 5 por abombamiento de la cápsula sospechoso de infiltración de la misma)
+-  Foco de pequeño tamaño, de 5  en  zona postero-medial  medio periférica basal derecha  PIRADS 4
+
+
+Zona transición:  con nódulos  hipertroficos. Aparentemente existe uno extruido a la zona periférica derecha.
+
+Extensión extracapsular:  Si en la lesión basal izquierda, con abombamiento de la cápsula
+
+Afectación del paquete vasculonervioso periprostático: NO
+
+Afectación de vesícula seminales: NO
+Cuello de la vejiga: Normal
+Esfínter distal: Normal
+
+AFECTACIÓN GANGLIONAR:
+Ganglios linfáticos:  no se identifican adenopatía.
+
+Hueso: sin lesiones
+
+
+CONCLUSIÓN:
+Lesion PIRADS 4 en PZpl A D  de 11 mm
+Lesion PIRADS 4 en PZplm M D de 5 mm
+Lesión PIRADS 5 en PZpm M I de 10 mm, pero con signos e infiltración de la capsula
+
+",1,XNAT3_S38681,XNAT3_E93860
+ses-002108,sub-001943,p0052021,7.0,67.0,,1.0,,4.190000000000000,161.733,,1.0,1945-02-21,2012-07-14,,-13.0,-17.0,"6,5 x 5,5 x 8,7 cm (T, AP y CC)
+Volumen: <NUM","DATOS CLÍNICOS: CaP. Vigilancia activa.
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 1000, <NUM> y 2000.
+
+HALLAZGOS:
+
+Calidad de imagen: Satisfactorio
+
+MORFOLOGÍA:
+Próstata hipertrófica.
+Tamaño: 6,5 x 5,5 x 8,7 cm (T, AP y CC)
+Volumen: <NUM> cc
+
+PIRADS(v2):
+
+Zona periférica: No se observan focos de hiposeñal que correspondan a la restricción en difusión y realce precoz a la administración de contraste que sugieran cáncer clínicamente significativo
+
+Zona central y de transición:  HPB sin lesiones sospechosas.
+
+Extensión extracapsular: NO procede
+
+Afectación del paquete vasculonervioso periprostático: NO procede
+
+Afectación de vesícula seminales: NO procede
+
+Cuello de la vejiga: Normal
+Esfínter distal: Normal
+
+Ganglios linfáticos: normales
+
+Hueso: sin lesiones agresivas.
+
+
+CONCLUSIÓN:
+No se observan lesiones sugestivas de cáncer clínicamente significativo
+
+",1,XNAT3_S38709,XNAT3_E93888
+ses-002251,sub-002076,p0052021,17.0,57.0,,,,3.110000000000000,,,1.0,1956-06-09,2014-05-12,,-18.0,69.0,,,0,XNAT3_S38842,XNAT3_E94031
+ses-002395,sub-002220,p0052021,17.0,80.0,,,,7.290000000000000,,,1.0,1935-12-27,2016-11-17,,-109.0,119.0,,,0,XNAT3_S38986,XNAT3_E94175
+ses-002727,sub-002537,p0052021,17.0,67.0,,1.0,,0.3750000000000000,,,1.0,1945-07-25,2012-08-03,,-6.0,35.0,,,0,XNAT3_S39305,XNAT3_E94508
+ses-002925,sub-002722,p0052021,7.0,67.0,,,,,27.69,[4],1.0,1943-02-24,2010-09-30,,,63.0,"Tamaño: 5,22 x 2,94 x  3,47cm (T, AP y CC)
+Volumen:  27,69cc
+
+<NAME>","TÉCNICA: RM prostática con administración de CIV.Dotarem 21  ml. Estudio dinámico de perfusion durante 5 min. Secuencias de difusión con b: 0, <NUM> y 2000. INDICACIÓN:
+Indicación: Paciente de 67 años adenocarcinoma de bajo riesgo.GLEASON  3+3=6. PSA 4,6
+HALLAZGOS:
+
+Calidad de imagen:subóptimo ( por restos hemorrágicos sobre todo en lóbulos periféricos y restos fecales y aire en ampolla rectal ) aunque diagnóstico.
+
+MORFOLOGÍA:
+Próstata heterogénea/hipertrofia
+Tamaño: 5,22 x 2,94 x  3,47cm (T, AP y CC)
+Volumen:  27,69cc
+
+<NAME> cT:
+Zona periférica:VER IMÁGENES RESUMEN (situación: I 19 APROX) abundantes restos hemorrágicos en ambos lóbulos periféicos que dificultan la valoración de esta zona anatómica.Foco de baja señal en las imágenes potenciadas en T2, con realce precoz y escaso lavado, que presenta  difusión restringida de 9 mm, en el lóbulo izquierdo, ápice ( vertiente superior) ,PZpm.
+Glándula central:  HPB I, heterogenea,sin foco de baja señal  individualizable , con restos de hemorragia en zona  TZa,por lo que resulta poco valorable.
+Extensión extracapsular: NO ( aunque amplio contacto con cápsula del foco sospechoso en zona apical izquierda de LPI)
+Ángulo rectoprostática, haz neurovascular, cápsula prostática:NO
+
+Afectación del paquete vasculonervioso periprostático: NO
+
+Afectación de vesícula seminales: NO
+Cuello de la vejiga: Normal
+Esfínter distal: Normal
+
+<NAME> cN:
+Ganglios linfáticos:no
+Hueso: sin lesiones agresivas,
+
+
+CONCLUSIÓN:
+Lesión PIRADS 4  en LPI ( ver descripción)
+Incidentalmente se observa múltiples divertículos sigmoideos no complicados.
+",1,XNAT3_S39490,XNAT3_E94706
+ses-003013,sub-002808,p0052021,7.0,71.0,,2.0,,2.650000000000000,34652.8,,1.0,1939-10-07,2011-05-02,,-160.0,32.0,": 49 x 34 x 40(T, AP y CC)","DATOS CLÍNICOS:
+Carcinoma de próstata. Valorar posible recidiva local post-RT.
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 0, 1000, <NUM> y 2000.
+
+HALLAZGOS:
+
+Calidad de imagen:  Satisfactorio
+
+MORFOLOGÍA:
+.- Próstata: HBP moderada
+.- Tamaño: 49 x 34 x 40(T, AP y CC)
+.- Volumen: 34.6  cc
+
+<NAME> cT:
+.- Zona periférica: conserva la señal homogénea en T2, sin focos de restricción en DWI ni realces significativos tras la administración de contraste
+.- Glándula central: foco de 10 mm de restricción en DWI en vertiente anterior de la ZT de la próstata basal derecha (se marca como imagen clave) que coincide con la zona de mayor metabolismo en PET-Ch y que realza precozmente tras la administración de contraste, por tanto, concordante como foco sospechoso de recidiva
+.- Extensión extracapsular: No se identifica afectación de la cápsula ni extensión extracapsular.
+.- Afectación del paquete vasculonervioso periprostático: NO
+.- Afectación de vesícula seminales: NO.
+.- Cuello de la vejiga: Sin alteraciones.
+.- Esfínter distal: Sin alteraciones.
+
+<NAME> cN:
+.- Ganglios linfáticos: No se identifican adenopatías ilíacas ni retroperitoneales.
+.- Hueso: No se identifican lesiones óseas sugestivas de metástasis. Cambios osteodegenerativos Modic tipo 2 en platillos vertebrales superior e inferior de L5.
+
+CONCLUSIÓN:
+Lesión sugestiva de recidiva tumoral en próstata basal transicional anterior derecha.
+",1,XNAT3_S39576,XNAT3_E94794
+ses-003020,sub-002815,p0052021,17.0,65.0,11.0,,,75.15000000000001,,,1.0,1947-08-01,2012-10-02,,-138.0,42.0,,,0,XNAT3_S39583,XNAT3_E94801
+ses-003058,sub-002850,p0052021,7.0,74.0,,,,,38.3,"[1, 3, 4]",1.0,1939-01-10,2013-12-06,,,99.0,4.6 x 3.2 x 5 cm (CC x AP x T) y 38.3 cc.,"DATOS CLÍNICOS: Paciente de 74 años, cinco años en VA, con PSa crecendo y RMmp hace dos años sin evidencia de lesiones. Solo tiene Bx inicial. RMmp PIRAD 3 sólo una lesion.
+
+TÉCNICA: RM MULTIPARAMÉTRICA DE PRÓSTATA EN PLANOS Y SECUENCIAS DE PULSO HABITUALES.
+
+Comparamos con RM prostáticas previas.
+
+Próstata hipertrófica, de 4.6 x 3.2 x 5 cm (CC x AP x T) y 38.3 cc.
+Impronta prostática sobre la pared posterior vesical.
+
+PI-RADS v2.1.
+
+- Zona periférica:
+Hipointensidad difusa de la zona periférica de manera bilateral, probablemente compresivo/por cambios inflamatorios crónicos.
+En la ZPpl-pm de la región apical izquierda se visualiza la lesión conocida de 4 mm, hipointensa y mal definida en T2, con leve restricción de la DWI, sin cambios relevantes (PI-RADS 3).
+
+En glándula media PZpm izquierda se visualiza otro mínimo foco de hiperintensidad en DWI de 10 mm, más evidente en secuencia b-2000 y no claramente visible en estudio previo, que se corresponde con un área hipointensa y mal definida en T2 que realza precozmente con el contraste (PI-RADS 4).
+
+- Zonas transicional: hiperplasia adenomatosa mixta, sin lesiones PI-RADS 3 o superior.
+
+Vesículas seminales de morfología e intensidad de señal normales.
+Sin evidencia de adenopatías locorregiones ni lesiones óseas sospechosas.
+
+Engrosamiento parietal con divertículos asociados de la vejiga en relación con vejiga de lucha.
+
+CONCLUSIÓN:
+- Lesión PI-RADS 4 en PZpm izquierda en glándula media. Recomendamos biopsia dirigida a dicha localización.
+- Lesión PI-RADS 3 en ZPpl-pm de región apical izquierda sin cambios.
+
+",1,XNAT3_S39619,XNAT3_E94839
+ses-003545,sub-003322,p0052021,7.0,68.0,,3.0,,11.85000000000000,25.0,"[2, 1]",1.0,1951-09-27,2019-11-22,,-190.0,49.0,"52 x 43 x 22 mm (T, CC y AP) 25 cc3.","DATOS CLÍNICOS:  Paciente con tumor de próstata gleason 3+3 y psa de 13 ng/ml. Valoración previa decisión si vigilancia activa vs tratamiento radical.
+
+TÉCNICA: RM multiparamétrica. Estudio dinámico de perfusión.
+
+HALLAZGOS:
+Calidad de estudio: adecuada
+
+Tamaño prostático: 52 x 43 x 22 mm (T, CC y AP) 25 cc3. PSA total: 11.85 (18/11/2020)
+Hemorragia: no
+
+Valoración PI-RADS 2.1
+
+Zona periférica:
+1- observación moderadamente hipotensa, de bordes mal definidos de aproximadamente 6 mm de diámetro en glandula media derecha (PZ pl-a) que muestra moderada señal en ADC y moderada hiperseñal en DWI. Realce negativo de contraste.
+
+2. observación moderadamente hipointensa de bordes mal definidos en glándula media izquierda (PZ pl) con moderada hiposeñal en ADC y moderada hiperseñal en DWI.  Realce de contraste negativo.
+
+Zona transición: cambios por RTU previa.
+
+Extensión extraprostática: no
+Afectación del paquete vasculonervioso periprostático: no
+Afectación de vesícula seminales: no
+Vejiga sin hallazgos significativos.
+Esfínter distal: normal
+Afectación ganglionar: no
+Estructuras óseas incluidas: sin hallazgos significativos.
+
+CONCLUSIÓN:
+Hallazgos dos lesiones PIRADS-3: en glándula media derecha PZ pl-a y glándula media izquierda PZ- pl.
+",1,XNAT3_S40120,XNAT3_E95355
+ses-003747,sub-003517,p0052021,7.0,48.0,,,,18.44000000000000,24.7104,[5],1.0,1970-03-28,2019-01-20,,-11.0,-7.0,"Tamaño: 36 x 33 x 40 mm (T, AP y CC)
+Volumen: <FECHA","INFORMACIÓN INFORMACIÓN 48 años Ca próstata localmente avanzado. RM prequirúrgica
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 1000, <NUM> y 2000.
+
+HALLAZGOS:
+
+Calidad de imagen: Satisfactorio.
+
+MORFOLOGÍA PRÓSTATA:
+
+Tamaño: 36 x 33 x 40 mm (T, AP y CC)
+Volumen: <FECHA> cc
+
+PIRADS (v2):
+PI-RADS 5: Próstata tumoral
+
+Extensión extraprostática: SI: extensión izquierda hasta contactar con puborrectal. Contacto y posible extensión a cara anterior del recto
+
+Afectación del paquete vasculonervioso periprostático: SI
+
+Afectación de vesícula seminales: SI. izquierda
+
+Vejiga: Trabeculada
+
+Esfínter distal: Normal.
+
+Ganglios linfáticos: Ganglio sospechoso de infiltración tumoral de 5 mm iliaco interno derecho
+
+Hueso: Sin lesiones óseas agresivas.
+
+
+
+CONCLUSIÓN:
+PI-RADS 5. Próstata tumoral con extensión extraprostática y ganglio sospechoso iliaco interno derecho
+",1,XNAT3_S40315,XNAT3_E95557
+ses-003858,sub-003624,p0052021,17.0,68.0,,,,0.2710000000000000,,,1.0,1946-12-22,2015-05-24,,-2.0,81.0,,"Motivo de consulta: prostatectomía radical laparoscópica (5-<LOC>). ADC prostático Gleason 9 (4+5), pT3a, N0, M0. Estudio previo a inicio de tratamiento adyuvante con RT.
+
+RM prostática. Se realiza estudio multiplanar con secuencias T2 y difusión.
+
+Cambios secundarios a prostatectomía radical. Anastomosis vesicouretral de apariencia normal.
+Vejiga escasamente replecionada, en la que no se observan lesiones parietales. Uréteres distales no dilatados.
+Recto, grasa del mesorrecto y complejo esfinteriano sin alteraciones.
+No hay adenopatías pélvicas significativas.
+No se observa líquido libre.
+
+Impresión Impresión estudio sin alteraciones significativas.
+
+",1,XNAT3_S40422,XNAT3_E95668
+ses-004001,sub-003757,p0052021,7.0,78.0,,,,4.990000000000000,20.15,,1.0,1940-12-16,2019-02-04,,-139.0,-39.0,"Tamaño: 50 x 25 x 31 mm (T, AP y CC)","JUICIO JUICIOCaProstata
+Grupo de Riesgo INTERMEDIO
+cT 2a c + PSA 4,8 + Gleason 3+4 (ISUP 2)
+Estadificación
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 0, 1000, <NUM> y 2000.
+
+HALLAZGOS:
+
+Calidad de imagen: Satisfactorio
+
+MORFOLOGÍA:
+Próstata con canbios de RTU
+Tamaño: 50 x 25 x 31 mm (T, AP y CC)
+Volumen: <FECHA> cc
+
+VALORACIÓN:
+
+No aplica PI-RADS (ADC ya diagnosticado)
+Zona periférica: Pequeño foco de 5 mm de hiposeñal en T2 y retricción en DWi localizado en próstata apical en zona paramedial derecha, como única alteración con características de CCS. Acorde con patrón cribiforme descrito en AP, con poca traducción en RM
+
+Glándula central: nódulos hiperplásicos glandulares
+
+Extensión extracapsular: NO
+
+Afectación del paquete vasculonervioso periprostático: NO
+
+Afectación de vesícula seminales: NO
+
+Vejiga: cuello ancho por RTU, sin lesiones
+Esfínter distal: Normal
+
+Ganglios linfáticos: sin evidencia de adenopatías locales
+
+Hueso: sin lesiones agresivas
+
+
+CONCLUSIÓN: pequeño foco de 5 mm paramedial derecho ZP apical con características de CCS sin evidencia de EE ni ganglionar pélvica
+
+",1,XNAT3_S40555,XNAT3_E95811
+ses-004457,sub-004177,p0052021,17.0,63.0,,1.0,,4.020000000000000,,,1.0,1945-11-06,2009-01-16,,-60.0,17.0,,,0,XNAT3_S40976,XNAT3_E96267
+ses-004619,sub-004327,p0052021,7.0,71.0,,,,,,,1.0,1939-04-17,2010-11-13,,,103.0,,"JUICIO JUICIO Tratado en <FECHA> con implante de I125. Actual recaida BQ PSA 6
+
+TÉCNICA RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 0, 1000, <NUM> y 2000.
+
+HALLAZGOS RADIOLÓGICOS
+Foco de recidiva local en la próstata apical en su zona transicional de aproximadamente 1 cm, que muestra marcada hiposeñal en ADC con realce tras la administración de contraste. No se observa extensión extraprostática.
+No se observan adenopatías locorregionales ni lesiones óseas.
+Pequeño aneurisma de aorta abdominal infrarrenal. Diverticulosis de sigma.
+CONCLUSIÓN
+Foco de recidiva en ZT anterior de próstata apical (ver fusión de imágenes)
+",1,XNAT3_S41127,XNAT3_E96430
+ses-004662,sub-004366,p0052021,7.0,76.0,,1.0,,10.33000000000000,35.0,,1.0,1937-12-13,2014-06-23,,-11.0,81.0,"5.4 cm de eje transverso x 3.9 cm de eje anteroposterior x  3.2 cm de eje craneocaudal.
+Volumen: 35  cc.
+
+DESCRIPCIÓN:","JUICIO JUICIO ADC próstata 3+4 . Gleason 9- estudio previo a indicación de radioterapia.
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 1000, <NUM> y 2000.
+Calidad de imagen: Satisfactorio
+
+HALLAZGOS:
+MORFOLOGÍA:
+Próstata
+Tamaño: De dimensiones máximas  5.4 cm de eje transverso x 3.9 cm de eje anteroposterior x  3.2 cm de eje craneocaudal.
+Volumen: 35  cc.
+
+DESCRIPCIÓN:
+
+En el estudio en secuencia potenciada en T1 no se evidencian restos hemáticos.
+PIRADS(v2):
+
+Extensa tumoración prostática ( 2.3 cm de eje máximo aproximado)  en lóbulo periférico izquierdo a nivel posterolateral de la base y tercio medio con extensión a la zona de transición izquierda. Signos de extensión extracapsular por contacto extenso con cápsula prostática e infiltración en la raíz de vesícula seminal izquierda. Sospecha de infiltración del paquete vasculonervioso izquierdo.
+No se identifican focos sospechosos en lóbulo periférico derecho.
+La cara anterior no muestra alteraciones morfológicas o de intensidad de señal sospechosas.
+
+
+No se identifican adenopatías de tamaño significativo pelvis.
+No se observan alteraciones en la estructuras óseas que sugieran enfermedad metastásica.
+
+Vejiga y recto sin hallazgos a reseñar en esta exploración.
+
+CONCLUSIÓN:  Extensa tumoración prostática  en lóbulo periférico izquierdo a nivel posterolateral de la base y tercio medio con extensión a la zona de transición izquierda. Signos de extensión extracapsular por contacto extenso con cápsula prostática e infiltración en la raíz de vesícula seminal izquierda. Sospecha de infiltración del paquete vasculonervioso izquierdo.
+Estadio radiológico : T3bN0M0
+",1,XNAT3_S41166,XNAT3_E96473
+ses-004990,sub-004657,p0052021,7.0,80.0,,1.0,,0.5940000000000000,29.0,[5],1.0,1932-08-09,2013-02-06,,-56.0,21.0,"dimensiones máximas  4 cm de eje transverso x 3.3 cm de eje anteroposterior x  4.3 cm de eje craneocaudal.
+Volumen: 29  cc.
+
+DESCRIPCIÓN:","JUICIO JUICIO PSA de 8. Gleason 3+5  en 09/10 muestras. Estudio de extensión local.
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 1000, <NUM> y 2000.
+Calidad de imagen: Satisfactorio
+
+HALLAZGOS:
+MORFOLOGÍA:
+
+Tamaño: De dimensiones máximas  4 cm de eje transverso x 3.3 cm de eje anteroposterior x  4.3 cm de eje craneocaudal.
+Volumen: 29  cc.
+
+DESCRIPCIÓN:
+
+En el estudio en secuencia potenciada en T1 no se evidencian restos hemáticos.
+
+PIRADS(v2):
+
+Zona periférica: Hipointensidad de señal difusa en secuencia T2 de ambos lóbulos periférico. Extensa restricción de la difusión afectando a ambos lóbulos periféricos, mayor en el lado izquierdo con extensión cráneo - medio- apical y afectación en menor medida en lóbulo periférico derecho, más acusada a nivel craneal y en el ápex. Hallazgos en relación con extensa tumoración bilateral con signos de invasión extracapsular, PIRADS 5 (muy alta sospecha de tumor clínicamente significativo)
+Zona de transición sin lesiones petrosas.
+La cara anterior no muestra alteraciones morfológicas o de intensidad de señal sospechosas.
+
+Afectación del paquete vasculonervioso periprostático: bilateral
+Afectación de vesícula seminales: Sospecha de infiltración en la raíz de ambas vesículas seminales.
+
+AFECTACIÓN GANGLIONAR:
+Ganglios linfáticos: No se dentifican adenopatías pélvicas ni retroperitoneales de tamaño significativo.
+Hueso: No se identifican lesiones óseas que sugieran enfermedad metastásica.
+Vejiga y recto sin hallazgos a reseñar en esta exploración.
+
+CONCLUSIÓN:  Extensa tumoración bilateral con signos de invasión extracapsular, PIRADS 5 (muy alta sospecha de tumor clínicamente significativo). Sospecha de infiltración de la raíz de ambas vesículas seminales.
+",1,XNAT3_S41458,XNAT3_E96801
+ses-005192,sub-004843,p0052021,7.0,53.0,,,,5.400000000000000,,"[3, 1, 4, 4, 3, 4, 3, 1, 5]",1.0,1957-02-28,2011-01-16,,-118.0,96.0,,"DATOS CLÍNICOS: ADC de próstata bilateral Gleason 3+4
+
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusión durante 5 min. Secuencias de difusión con b: 0, 1000 y 2000.
+HALLAZGOS:
+
+Calidad de imagen:  Satisfactorio
+
+MORFOLOGÍA:
+Próstata (homogénea/heterogénea/hipertrofia)
+Tamaño:4,6 x 3,6x 4, 8 cm (T, AP y CC)
+Volumen:  41 cc
+
+PIRADS(v2):
+Zona periférica:  En  la glándula periférica derecha,  segmentos PZpl- M- B derechos existe área  homogenea,  hipointensa en T2 ( con restos hemáticos en la secuancia T1), con marcada restricción de la DWI e hipercaptación del contraste.
+En la vertiente posterior impresiona de abombamiento de la capsula prostatica,  con discreta asimétrica del paquete vasculo-nervioso,  todo ello sospechoso de probable  infiltraciónd e la misma.
+Lesión PI-RADS 5
+
+
+Otro foco mal delimitado periférico apical izquierdo, Segmentos Pza/Pzpl de 4-5 mm , con restos hemáticos post biopsia y discreta restricción de la DWI. Hipercaptación  en estudio  con contraste, valorado en imagenes de sustracción . PIRADS 4 ( Pi-RADS 3 + 1 de up-grading por hipercpatación)
+
+Zona transición: <NAME>
+
+Extensión extracapsular:  Probable  infiltración de la  cápsula prostática  en su vertiente posterior derecha
+
+Afectación del paquete vasculonervioso periprostático: probable en el aldo derecho
+
+Afectación de vesícula seminales: NO
+
+Cuello de la vejiga: Normal
+Esfínter distal: Normal
+
+AFECTACIÓN GANGLIONAR:
+Ganglios linfáticos:  No se aprecian adenopatias  en cadenas loco-regionales
+
+Hueso: sin lesiones agresivas
+
+
+CONCLUSIÓN:
+Lesión Pi-RADS 5 en  segmentos PZ-pl- M-B- derechos con probbale infiltración de la cápsula prostática y paquete
+Lesión PI- RADS 4 ( 3 +1 por hipercaptción)  en  segmento PZ-pl-A izquierda
+
+
+",1,XNAT3_S41644,XNAT3_E97003
+ses-005260,sub-004908,p0052021,7.0,58.0,,1.0,,17.65000000000000,,[5],1.0,1958-06-17,2017-02-10,,-18.0,-10.0,,"Juicio Juicio Cáncer de próstata. Estudio de extensión.
+TÉCNICA: RM prostática con administración de CIV. Estudio dinámico de perfusion durante 5 min. Secuencias de difusión con b: 0, 1000 y 2000.
+HALLAZGOS: Estudio comparativo con RM previa de <FECHA> <FECHA> <FECHA>.
+Calidad de imagen:  Satisfactorio
+MORFOLOGÍA:
+Tamaño: <NUM> cm (T, AP y CC)
+Volumen: 43 cc (HP ºII)
+
+PIRADS(v2):
+Mayor prominencia de la lesión en zona de transición anterior derecha de la base glandular, de morfología tubular, de unos 14mm ( previo 12mm), con marcada difusión restringida que probablemente engloba por contigüidad al lóbulo periférico derecho anterior cráneal, en relación con lesión PI-RADS 5 (muy alta sospecha de tumor clínicamente significativo) con signos de invasión  extracapsular por abombamiento de la lesión.
+Afectación del paquete vasculonervioso periprostático: NO
+Afectación de vesícula seminales: NO
+Cuello de la vejiga: Normal
+Esfínter distal: Normal
+AFECTACIÓN GANGLIONAR:
+Ganglios linfáticos:No se observan adenopatías significativas locoregionales. Adenopatías inguinales bilaterales similares el estudio anterior, probablemente reactivos.
+Hueso: sin lesiones agresivas sugestivas de metástasis
+
+CONCLUSIÓN:
+Lesión PI-RADS 5   (muy alta sospecha de tumor clínicamente significativo) en zona de transición anterior derecha de la base glandular más prominente que en estudio previo, que probablemente engloba por contigüidad al lóbulo periférico derecho anterior cráneal con signos de invasión extracapsular por abombamiento de la lesión.
+
+
+",1,XNAT3_S41709,XNAT3_E97071

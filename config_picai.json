@@ -1,5 +1,5 @@
 {
-    "name": "Prostate_Picai",
+    "name": "Prostate_Picai_efficientnetb7",
     "description": "",
     "task": "classification",
     "n_gpu": 1,
@@ -76,12 +76,12 @@
     },
     "trainer": {
         "type": "ClassificationTrainer",
-        "epochs": 100,
-        "save_dir": "/home/jaalzate/Prostate_Cancer_TFM/Classification/logs/",
+        "epochs": 200,
+        "save_dir": "/home/ceib/jaalzate/BIMCV-Prostate-Classification/logs",
         "save_period": 33,
         "verbosity": 2,
         "monitor": "max f1",
-        "early_stop": 100,
+        "early_stop": 200,
         "tensorboard": true
     }
 }

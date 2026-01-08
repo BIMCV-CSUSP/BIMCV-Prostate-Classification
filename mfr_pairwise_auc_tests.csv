@@ -1,0 +1,4 @@
+m1,m2,delta_auc,p_value,n1,n2,p_fdr
+GE,Philips,-0.158293041833088,,138,2,
+GE,Siemens,0.841706958166912,,138,3,
+Philips,Siemens,1.0,,2,3,

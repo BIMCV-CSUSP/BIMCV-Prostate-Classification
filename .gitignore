@@ -1,3 +1,5 @@
 *.nii.gz
 *.pth
 logs/
+.venv/
+BIMCV-AIKit/
