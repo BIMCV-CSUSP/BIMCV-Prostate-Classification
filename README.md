@@ -2,7 +2,7 @@
 A Repository Containing the code used to classify Clinically Significant Prostate Cancer on BIMCV Prostate MRI Dataset.
 
 <p align="center">
-  <img src="Result_Figures/Guided_Backprop_result.png" alt="BIMCV Classification Results" width="90%">
+  <img src="outputs/figures/Result_Figures_old/Guided_Backprop_result.png" alt="BIMCV Classification Results" width="90%">
 </p>
 
 ## Table of Contents
@@ -14,6 +14,7 @@ A Repository Containing the code used to classify Clinically Significant Prostat
 - [Results](#results)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
+- [Repository Structure](#repository-structure)
 - [Usage](#usage)
 - [References](#references)
 - [Grants and Funding](#grants-and-funding)
@@ -42,8 +43,10 @@ A 3D EfficientNet-B7 model is adapted and trained for classifying csPCa from mul
 
 The 3D EfficientNet-B7 model achieved an AUC of 0.82 in the validation set.
 <p align="center">
-  <img src="Result_Figures/AUC_ROC_BIMCV.png" alt="BIMCV Classification Results" width="80%">
+  <img src="outputs/figures/Result_Figures_old/AUC_ROC_BIMCV.png" alt="BIMCV Classification Results" width="80%">
 </p>
+Generated figures and JSON metrics are stored under `outputs/figures/` and `outputs/results/`.
+Additional comparison plots are under `outputs/figures/results/`.
 
 ## Dependencies
 
@@ -71,27 +74,59 @@ cd BIMCV-AIKit
 pip install -e .
 ```
 
+Then, from this repository root, install the local package so modules under `src/` are importable:
+```bash
+pip install -e .
+```
+
+## Repository Structure
+
+- `src/bimcv_prostate/` - Core library
+  - `data/` - Loaders and transforms
+  - `models/` - Model definitions
+  - `training/` - Train/averaging utilities
+  - `utils/` - Path mapping and config helpers
+  - `experiments/clinical/` - Clinical variable experiments
+- `configs/` - Training configs (JSON)
+- `scripts/` - CLI entrypoints (train, eval, average_model)
+- `notebooks/` - Analysis notebooks
+- `outputs/` - Generated artifacts (results, figures, reports)
+
 ## Usage
 
 1. **Data Preparation:** Ensure the dataset is available and structured as required. All data preparation and analysis can be found in the Data Structuring and Data Analysis folders.
 
 2. **Training:** For pre-training with the PI-CAI dataset, download The PI-CAI Challenge: Public Training and Development Dataset. Pretrain using BIMCV-AIKit with:
 ```bash
-bimcv_train -c config_picai.json
+bimcv_train -c configs/config_picai.json
 ```
 or
 ```bash
-python -m bimcv_aikit.training.train -c config.json
+python -m bimcv_aikit.training.train -c configs/config_picai.json
 ```
-Finally, with the pretrained model, ensure updating the pretrained weights in the config file:
+Finally, with the pretrained model, update `pretrained_weights_path` in `configs/config.json` and train on BIMCV:
 ```bash
-bimcv_train -c config_bimcv.json
+bimcv_train -c configs/config.json
 ```
-3. Evaluation: Use the evaluation scripts to as the [Analize_Results.ipynb](Analize_Results.ipynb) assess model performance on the validation set.
+You can also use the helper wrapper:
+```bash
+python scripts/train.py --config configs/config.json
+```
+3. **Evaluation:** Run the main analysis notebook or execute it via the helper script:
+```bash
+python scripts/eval.py --notebook notebooks/Analize_Results.ipynb
+```
+4. **Model Averaging:** Build an averaged backbone from fold checkpoints:
+```bash
+python scripts/average_model.py --fold path/to/fold0.pth --weight 0.25 --fold path/to/fold1.pth --weight 0.25
+```
+5. **Clinical Variables Experiments:** Use the clinical configs under `configs/clinical/`:
+```bash
+bimcv_train -c configs/clinical/config.json
+```
 
 ## References
 [1] A. Saha, J. S. Bosma, J. J. Twilt, B. van Ginneken, A. Bjartell, A. R. Padhani, D. Bonekamp, G. Villeirs, G. Salomon, G. Giannarini, J. Kalpathy-Cramer, J. Barentsz, K. H. Maier-Hein, M. Rusu, O. Rouvière, R. van den Bergh, V. Panebianco, V. Kasivisvanathan, N. A. Obuchowski, D. Yakar, M. Elschot, J. Veltman, J. J. Fütterer, M. de Rooij, H. Huisman, and the PI-CAI consortium. “Artificial Intelligence and Radiologists in Prostate Cancer Detection on MRI (PI-CAI): An International, Paired, Non-Inferiority, Confirmatory Study”. The Lancet Oncology 2024; 25(7): 879-887.
 
 ## Grants and Funding
 Funded by the Spanish Ministry of Economic Affairs and Digital Transformation (Project MIA.2021.M02.0005 TARTAGLIA, from the Recovery, Resilience, and Transformation Plan financed by the European Union through Next Generation EU funds). TARTAGLIA takes place under the R&D Missions in Artificial Intelligence program, which is part of the Spain Digital 2025 Agenda and the Spanish National Artificial Intelligence Strategy.
-

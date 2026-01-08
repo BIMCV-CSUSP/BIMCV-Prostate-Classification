@@ -1,0 +1,97 @@
+{
+    "name": "Prostate_Picai_efficientnetb7",
+    "description": "",
+    "task": "classification",
+    "n_gpu": 1,
+    "seed": 42,
+    "arch": {
+        "module": "monai.networks.nets",
+        "type": "EfficientNetBN",
+        "args": {
+            "model_name": "efficientnet-b7",
+            "spatial_dims": 3,
+            "in_channels": 3,
+            "num_classes": 2,
+            "pretrained": false,
+            "progress": false
+        }
+    },
+    "data_loader": {
+        "module": "bimcv_prostate.data.dataloaders",
+        "type": "ProstateImageDataLoader",
+        "partitions": {
+            "folds": [
+                "Fold 0",
+                "Fold 1",
+                "Fold 2",
+                "Fold 3",
+                "Fold 4"
+            ],
+            "train": "train",
+            "val": "val",
+            "test": "test"
+        },
+        "args": {
+            "path": "Files/picai_cv.csv",
+            "test_run": false,
+            "partition_column": "partition",
+            "label_column": "label",
+            "csv_image_columns": [
+                "filepath_t2w_cropped",
+                "filepath_adc_cropped",
+                "filepath_hbv_cropped"
+            ],
+            "path_rewrites": [
+                ["/nvmescratch/ceib/Prostate", "/mnt/datalake/FISABIO_datalake"]
+            ],
+            "config": {
+                "batch_size": 16,
+                "drop_last": true,
+                "shuffle": true
+            }
+        }
+    },
+    "optimizer": {
+        "type": "Adadelta",
+        "args": {
+            "lr": 1.0,
+            "rho": 0.95,
+            "eps": 1e-07
+        }
+    },
+    "loss": {
+        "module": "torch.nn",
+        "type": "CrossEntropyLoss",
+        "args": {}
+    },
+    "metrics": {
+        "accuracy": {
+            "module": "torchmetrics.functional.classification",
+            "type": "accuracy",
+            "args": {
+                "task": "multiclass",
+                "average": "weighted",
+                "num_classes": 2
+            }
+        },
+        "f1": {
+            "module": "torchmetrics.functional",
+            "type": "f1_score",
+            "args": {
+                "task": "multiclass",
+                "average": "weighted",
+                "num_classes": 2
+            }
+        }
+    },
+    "trainer": {
+        "type": "ClassificationTrainer",
+        "epochs": 200,
+        "save_dir": "outputs/logs",
+        "save_period": 33,
+        "verbosity": 2,
+        "monitor": "max f1",
+        "early_stop": 200,
+        "tensorboard": true
+    }
+}

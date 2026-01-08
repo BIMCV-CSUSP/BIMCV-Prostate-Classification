@@ -1,6 +1,9 @@
 *.nii.gz
 *.pth
 logs/
+outputs/
+__pycache__/
+.ipynb_checkpoints/
 .venv/
 BIMCV-AIKit/
 averaged_pretrained_backbone.pt
