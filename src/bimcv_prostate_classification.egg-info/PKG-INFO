@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: bimcv-prostate-classification
+Version: 0.1.0
+Summary: Tools for BIMCV prostate MRI classification.
+Requires-Python: >=3.8
+License-File: LICENSE
+Dynamic: license-file
