@@ -8,3 +8,4 @@ __pycache__/
 BIMCV-AIKit/
 averaged_pretrained_backbone.pt
 Files/data
+Results/
