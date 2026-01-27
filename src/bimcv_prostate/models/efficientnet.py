@@ -25,7 +25,7 @@ class EfficientNet_pretrained(nn.Module):
         )
 
         if pretrained_weights_path:
-            model.load_state_dict(torch.load(pretrained_weights_path)["state_dict"])
+            model.load_state_dict(torch.load(pretrained_weights_path, weights_only=True)["state_dict"])
 
         self.model = model
 
@@ -54,7 +54,7 @@ class EfficientNetMultimodal(nn.Module):
         )
 
         if pretrained_weights_path:
-            self.vision_backbone.load_state_dict(torch.load(pretrained_weights_path)["state_dict"])
+            self.vision_backbone.load_state_dict(torch.load(pretrained_weights_path, weights_only=True)["state_dict"])
 
         self.fc = nn.Linear(in_num_features + n_classes, n_classes)
 
