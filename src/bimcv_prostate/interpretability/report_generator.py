@@ -55,7 +55,7 @@ class ReportConfig:
     occlusion_stride: Tuple[int, int, int] = (12, 12, 4)
     noise_threshold: float = 0.0
     partition: str = "val"
-    label_column: str = "csPC_x"
+    label_column: str = "csPC"
     path_rewrites: Sequence[Tuple[str, str]] = (
         ("ceib/", ""),
         ("prueba/p0052021_reborn/", "p0052021/"),
@@ -106,7 +106,7 @@ def load_efficientnet_model(
         return None
 
     try:
-        state_dict = torch.load(weight_path, map_location="cpu")["state_dict"]
+        state_dict = torch.load(weight_path, map_location="cpu", weights_only=True)["state_dict"]
         first_key = next(iter(state_dict.keys()))
 
         if first_key.startswith("model."):

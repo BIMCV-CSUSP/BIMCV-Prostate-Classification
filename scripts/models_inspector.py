@@ -3,7 +3,6 @@
 # Guarda en un .txt todas las capas y sus resoluciones para elegir Target Layer.
 # ==============================================================================
 import torch
-import torch.nn as nn
 import sys
 import os
 

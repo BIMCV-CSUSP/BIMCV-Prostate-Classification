@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Iterable, Sequence, Tuple
+from typing import Sequence, Tuple
 
 from monai import transforms
 
