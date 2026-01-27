@@ -1,0 +1,1064 @@
+====================================================================================================
+ESTRUCTURA COMPLETA DEL MODELO (EfficientNet-B7 3D)
+Input simulado: (1, 3, 320, 320, 24)
+====================================================================================================
+Nombre de la Capa                                            | Shape Salida (B, C, D, H, W)   | Notas
+----------------------------------------------------------------------------------------------------
+model._conv_stem                                             | (1, 64, 160, 160, 12)          | 
+model._conv_stem_padding                                     | (1, 3, 321, 321, 25)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._bn0                                                   | (1, 64, 160, 160, 12)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks                                                | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.0                                              | (1, 32, 160, 160, 12)          | 
+model._blocks.0.0                                            | (1, 32, 160, 160, 12)          | 
+model._blocks.0.0._depthwise_conv                            | (1, 64, 160, 160, 12)          | 
+model._blocks.0.0._depthwise_conv_padding                    | (1, 64, 162, 162, 14)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.0._bn1                                       | (1, 64, 160, 160, 12)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.0._se_adaptpool                              | (1, 64, 1, 1, 1)               | 
+model._blocks.0.0._se_reduce                                 | (1, 16, 1, 1, 1)               | 
+model._blocks.0.0._se_reduce_padding                         | (1, 64, 1, 1, 1)               | 
+model._blocks.0.0._se_expand                                 | (1, 64, 1, 1, 1)               | 
+model._blocks.0.0._se_expand_padding                         | (1, 16, 1, 1, 1)               | 
+model._blocks.0.0._project_conv                              | (1, 32, 160, 160, 12)          | 
+model._blocks.0.0._project_conv_padding                      | (1, 64, 160, 160, 12)          | 
+model._blocks.0.0._bn2                                       | (1, 32, 160, 160, 12)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.0._swish                                     | (1, 16, 1, 1, 1)               | 
+model._blocks.0.1                                            | (1, 32, 160, 160, 12)          | 
+model._blocks.0.1._depthwise_conv                            | (1, 32, 160, 160, 12)          | 
+model._blocks.0.1._depthwise_conv_padding                    | (1, 32, 162, 162, 14)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.1._bn1                                       | (1, 32, 160, 160, 12)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.1._se_adaptpool                              | (1, 32, 1, 1, 1)               | 
+model._blocks.0.1._se_reduce                                 | (1, 8, 1, 1, 1)                | 
+model._blocks.0.1._se_reduce_padding                         | (1, 32, 1, 1, 1)               | 
+model._blocks.0.1._se_expand                                 | (1, 32, 1, 1, 1)               | 
+model._blocks.0.1._se_expand_padding                         | (1, 8, 1, 1, 1)                | 
+model._blocks.0.1._project_conv                              | (1, 32, 160, 160, 12)          | 
+model._blocks.0.1._project_conv_padding                      | (1, 32, 160, 160, 12)          | 
+model._blocks.0.1._bn2                                       | (1, 32, 160, 160, 12)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.1._swish                                     | (1, 8, 1, 1, 1)                | 
+model._blocks.0.2                                            | (1, 32, 160, 160, 12)          | 
+model._blocks.0.2._depthwise_conv                            | (1, 32, 160, 160, 12)          | 
+model._blocks.0.2._depthwise_conv_padding                    | (1, 32, 162, 162, 14)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.2._bn1                                       | (1, 32, 160, 160, 12)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.2._se_adaptpool                              | (1, 32, 1, 1, 1)               | 
+model._blocks.0.2._se_reduce                                 | (1, 8, 1, 1, 1)                | 
+model._blocks.0.2._se_reduce_padding                         | (1, 32, 1, 1, 1)               | 
+model._blocks.0.2._se_expand                                 | (1, 32, 1, 1, 1)               | 
+model._blocks.0.2._se_expand_padding                         | (1, 8, 1, 1, 1)                | 
+model._blocks.0.2._project_conv                              | (1, 32, 160, 160, 12)          | 
+model._blocks.0.2._project_conv_padding                      | (1, 32, 160, 160, 12)          | 
+model._blocks.0.2._bn2                                       | (1, 32, 160, 160, 12)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.2._swish                                     | (1, 8, 1, 1, 1)                | 
+model._blocks.0.3                                            | (1, 32, 160, 160, 12)          | 
+model._blocks.0.3._depthwise_conv                            | (1, 32, 160, 160, 12)          | 
+model._blocks.0.3._depthwise_conv_padding                    | (1, 32, 162, 162, 14)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.3._bn1                                       | (1, 32, 160, 160, 12)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.3._se_adaptpool                              | (1, 32, 1, 1, 1)               | 
+model._blocks.0.3._se_reduce                                 | (1, 8, 1, 1, 1)                | 
+model._blocks.0.3._se_reduce_padding                         | (1, 32, 1, 1, 1)               | 
+model._blocks.0.3._se_expand                                 | (1, 32, 1, 1, 1)               | 
+model._blocks.0.3._se_expand_padding                         | (1, 8, 1, 1, 1)                | 
+model._blocks.0.3._project_conv                              | (1, 32, 160, 160, 12)          | 
+model._blocks.0.3._project_conv_padding                      | (1, 32, 160, 160, 12)          | 
+model._blocks.0.3._bn2                                       | (1, 32, 160, 160, 12)          | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.0.3._swish                                     | (1, 8, 1, 1, 1)                | 
+model._blocks.1                                              | (1, 48, 80, 80, 6)             | 
+model._blocks.1.4                                            | (1, 48, 80, 80, 6)             | 
+model._blocks.1.4._expand_conv                               | (1, 192, 160, 160, 12)         | 
+model._blocks.1.4._expand_conv_padding                       | (1, 32, 160, 160, 12)          | 
+model._blocks.1.4._bn0                                       | (1, 192, 160, 160, 12)         | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.4._depthwise_conv                            | (1, 192, 80, 80, 6)            | 
+model._blocks.1.4._depthwise_conv_padding                    | (1, 192, 161, 161, 13)         | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.4._bn1                                       | (1, 192, 80, 80, 6)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.4._se_adaptpool                              | (1, 192, 1, 1, 1)              | 
+model._blocks.1.4._se_reduce                                 | (1, 8, 1, 1, 1)                | 
+model._blocks.1.4._se_reduce_padding                         | (1, 192, 1, 1, 1)              | 
+model._blocks.1.4._se_expand                                 | (1, 192, 1, 1, 1)              | 
+model._blocks.1.4._se_expand_padding                         | (1, 8, 1, 1, 1)                | 
+model._blocks.1.4._project_conv                              | (1, 48, 80, 80, 6)             | 
+model._blocks.1.4._project_conv_padding                      | (1, 192, 80, 80, 6)            | 
+model._blocks.1.4._bn2                                       | (1, 48, 80, 80, 6)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.4._swish                                     | (1, 8, 1, 1, 1)                | 
+model._blocks.1.5                                            | (1, 48, 80, 80, 6)             | 
+model._blocks.1.5._expand_conv                               | (1, 288, 80, 80, 6)            | 
+model._blocks.1.5._expand_conv_padding                       | (1, 48, 80, 80, 6)             | 
+model._blocks.1.5._bn0                                       | (1, 288, 80, 80, 6)            | 
+model._blocks.1.5._depthwise_conv                            | (1, 288, 80, 80, 6)            | 
+model._blocks.1.5._depthwise_conv_padding                    | (1, 288, 82, 82, 8)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.5._bn1                                       | (1, 288, 80, 80, 6)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.5._se_adaptpool                              | (1, 288, 1, 1, 1)              | 
+model._blocks.1.5._se_reduce                                 | (1, 12, 1, 1, 1)               | 
+model._blocks.1.5._se_reduce_padding                         | (1, 288, 1, 1, 1)              | 
+model._blocks.1.5._se_expand                                 | (1, 288, 1, 1, 1)              | 
+model._blocks.1.5._se_expand_padding                         | (1, 12, 1, 1, 1)               | 
+model._blocks.1.5._project_conv                              | (1, 48, 80, 80, 6)             | 
+model._blocks.1.5._project_conv_padding                      | (1, 288, 80, 80, 6)            | 
+model._blocks.1.5._bn2                                       | (1, 48, 80, 80, 6)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.5._swish                                     | (1, 12, 1, 1, 1)               | 
+model._blocks.1.6                                            | (1, 48, 80, 80, 6)             | 
+model._blocks.1.6._expand_conv                               | (1, 288, 80, 80, 6)            | 
+model._blocks.1.6._expand_conv_padding                       | (1, 48, 80, 80, 6)             | 
+model._blocks.1.6._bn0                                       | (1, 288, 80, 80, 6)            | 
+model._blocks.1.6._depthwise_conv                            | (1, 288, 80, 80, 6)            | 
+model._blocks.1.6._depthwise_conv_padding                    | (1, 288, 82, 82, 8)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.6._bn1                                       | (1, 288, 80, 80, 6)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.6._se_adaptpool                              | (1, 288, 1, 1, 1)              | 
+model._blocks.1.6._se_reduce                                 | (1, 12, 1, 1, 1)               | 
+model._blocks.1.6._se_reduce_padding                         | (1, 288, 1, 1, 1)              | 
+model._blocks.1.6._se_expand                                 | (1, 288, 1, 1, 1)              | 
+model._blocks.1.6._se_expand_padding                         | (1, 12, 1, 1, 1)               | 
+model._blocks.1.6._project_conv                              | (1, 48, 80, 80, 6)             | 
+model._blocks.1.6._project_conv_padding                      | (1, 288, 80, 80, 6)            | 
+model._blocks.1.6._bn2                                       | (1, 48, 80, 80, 6)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.6._swish                                     | (1, 12, 1, 1, 1)               | 
+model._blocks.1.7                                            | (1, 48, 80, 80, 6)             | 
+model._blocks.1.7._expand_conv                               | (1, 288, 80, 80, 6)            | 
+model._blocks.1.7._expand_conv_padding                       | (1, 48, 80, 80, 6)             | 
+model._blocks.1.7._bn0                                       | (1, 288, 80, 80, 6)            | 
+model._blocks.1.7._depthwise_conv                            | (1, 288, 80, 80, 6)            | 
+model._blocks.1.7._depthwise_conv_padding                    | (1, 288, 82, 82, 8)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.7._bn1                                       | (1, 288, 80, 80, 6)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.7._se_adaptpool                              | (1, 288, 1, 1, 1)              | 
+model._blocks.1.7._se_reduce                                 | (1, 12, 1, 1, 1)               | 
+model._blocks.1.7._se_reduce_padding                         | (1, 288, 1, 1, 1)              | 
+model._blocks.1.7._se_expand                                 | (1, 288, 1, 1, 1)              | 
+model._blocks.1.7._se_expand_padding                         | (1, 12, 1, 1, 1)               | 
+model._blocks.1.7._project_conv                              | (1, 48, 80, 80, 6)             | 
+model._blocks.1.7._project_conv_padding                      | (1, 288, 80, 80, 6)            | 
+model._blocks.1.7._bn2                                       | (1, 48, 80, 80, 6)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.7._swish                                     | (1, 12, 1, 1, 1)               | 
+model._blocks.1.8                                            | (1, 48, 80, 80, 6)             | 
+model._blocks.1.8._expand_conv                               | (1, 288, 80, 80, 6)            | 
+model._blocks.1.8._expand_conv_padding                       | (1, 48, 80, 80, 6)             | 
+model._blocks.1.8._bn0                                       | (1, 288, 80, 80, 6)            | 
+model._blocks.1.8._depthwise_conv                            | (1, 288, 80, 80, 6)            | 
+model._blocks.1.8._depthwise_conv_padding                    | (1, 288, 82, 82, 8)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.8._bn1                                       | (1, 288, 80, 80, 6)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.8._se_adaptpool                              | (1, 288, 1, 1, 1)              | 
+model._blocks.1.8._se_reduce                                 | (1, 12, 1, 1, 1)               | 
+model._blocks.1.8._se_reduce_padding                         | (1, 288, 1, 1, 1)              | 
+model._blocks.1.8._se_expand                                 | (1, 288, 1, 1, 1)              | 
+model._blocks.1.8._se_expand_padding                         | (1, 12, 1, 1, 1)               | 
+model._blocks.1.8._project_conv                              | (1, 48, 80, 80, 6)             | 
+model._blocks.1.8._project_conv_padding                      | (1, 288, 80, 80, 6)            | 
+model._blocks.1.8._bn2                                       | (1, 48, 80, 80, 6)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.8._swish                                     | (1, 12, 1, 1, 1)               | 
+model._blocks.1.9                                            | (1, 48, 80, 80, 6)             | 
+model._blocks.1.9._expand_conv                               | (1, 288, 80, 80, 6)            | 
+model._blocks.1.9._expand_conv_padding                       | (1, 48, 80, 80, 6)             | 
+model._blocks.1.9._bn0                                       | (1, 288, 80, 80, 6)            | 
+model._blocks.1.9._depthwise_conv                            | (1, 288, 80, 80, 6)            | 
+model._blocks.1.9._depthwise_conv_padding                    | (1, 288, 82, 82, 8)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.9._bn1                                       | (1, 288, 80, 80, 6)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.9._se_adaptpool                              | (1, 288, 1, 1, 1)              | 
+model._blocks.1.9._se_reduce                                 | (1, 12, 1, 1, 1)               | 
+model._blocks.1.9._se_reduce_padding                         | (1, 288, 1, 1, 1)              | 
+model._blocks.1.9._se_expand                                 | (1, 288, 1, 1, 1)              | 
+model._blocks.1.9._se_expand_padding                         | (1, 12, 1, 1, 1)               | 
+model._blocks.1.9._project_conv                              | (1, 48, 80, 80, 6)             | 
+model._blocks.1.9._project_conv_padding                      | (1, 288, 80, 80, 6)            | 
+model._blocks.1.9._bn2                                       | (1, 48, 80, 80, 6)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.9._swish                                     | (1, 12, 1, 1, 1)               | 
+model._blocks.1.10                                           | (1, 48, 80, 80, 6)             | 
+model._blocks.1.10._expand_conv                              | (1, 288, 80, 80, 6)            | 
+model._blocks.1.10._expand_conv_padding                      | (1, 48, 80, 80, 6)             | 
+model._blocks.1.10._bn0                                      | (1, 288, 80, 80, 6)            | 
+model._blocks.1.10._depthwise_conv                           | (1, 288, 80, 80, 6)            | 
+model._blocks.1.10._depthwise_conv_padding                   | (1, 288, 82, 82, 8)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.10._bn1                                      | (1, 288, 80, 80, 6)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.10._se_adaptpool                             | (1, 288, 1, 1, 1)              | 
+model._blocks.1.10._se_reduce                                | (1, 12, 1, 1, 1)               | 
+model._blocks.1.10._se_reduce_padding                        | (1, 288, 1, 1, 1)              | 
+model._blocks.1.10._se_expand                                | (1, 288, 1, 1, 1)              | 
+model._blocks.1.10._se_expand_padding                        | (1, 12, 1, 1, 1)               | 
+model._blocks.1.10._project_conv                             | (1, 48, 80, 80, 6)             | 
+model._blocks.1.10._project_conv_padding                     | (1, 288, 80, 80, 6)            | 
+model._blocks.1.10._bn2                                      | (1, 48, 80, 80, 6)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.1.10._swish                                    | (1, 12, 1, 1, 1)               | 
+model._blocks.2                                              | (1, 80, 40, 40, 3)             | 
+model._blocks.2.11                                           | (1, 80, 40, 40, 3)             | 
+model._blocks.2.11._expand_conv                              | (1, 288, 80, 80, 6)            | 
+model._blocks.2.11._expand_conv_padding                      | (1, 48, 80, 80, 6)             | 
+model._blocks.2.11._bn0                                      | (1, 288, 80, 80, 6)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.11._depthwise_conv                           | (1, 288, 40, 40, 3)            | 
+model._blocks.2.11._depthwise_conv_padding                   | (1, 288, 83, 83, 9)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.11._bn1                                      | (1, 288, 40, 40, 3)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.11._se_adaptpool                             | (1, 288, 1, 1, 1)              | 
+model._blocks.2.11._se_reduce                                | (1, 12, 1, 1, 1)               | 
+model._blocks.2.11._se_reduce_padding                        | (1, 288, 1, 1, 1)              | 
+model._blocks.2.11._se_expand                                | (1, 288, 1, 1, 1)              | 
+model._blocks.2.11._se_expand_padding                        | (1, 12, 1, 1, 1)               | 
+model._blocks.2.11._project_conv                             | (1, 80, 40, 40, 3)             | <--- ¡BUENA OPCIÓN!
+model._blocks.2.11._project_conv_padding                     | (1, 288, 40, 40, 3)            | <--- ¡BUENA OPCIÓN!
+model._blocks.2.11._bn2                                      | (1, 80, 40, 40, 3)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.11._swish                                    | (1, 12, 1, 1, 1)               | 
+model._blocks.2.12                                           | (1, 80, 40, 40, 3)             | 
+model._blocks.2.12._expand_conv                              | (1, 480, 40, 40, 3)            | 
+model._blocks.2.12._expand_conv_padding                      | (1, 80, 40, 40, 3)             | 
+model._blocks.2.12._bn0                                      | (1, 480, 40, 40, 3)            | 
+model._blocks.2.12._depthwise_conv                           | (1, 480, 40, 40, 3)            | 
+model._blocks.2.12._depthwise_conv_padding                   | (1, 480, 44, 44, 7)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.12._bn1                                      | (1, 480, 40, 40, 3)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.12._se_adaptpool                             | (1, 480, 1, 1, 1)              | 
+model._blocks.2.12._se_reduce                                | (1, 20, 1, 1, 1)               | 
+model._blocks.2.12._se_reduce_padding                        | (1, 480, 1, 1, 1)              | 
+model._blocks.2.12._se_expand                                | (1, 480, 1, 1, 1)              | 
+model._blocks.2.12._se_expand_padding                        | (1, 20, 1, 1, 1)               | 
+model._blocks.2.12._project_conv                             | (1, 80, 40, 40, 3)             | <--- ¡BUENA OPCIÓN!
+model._blocks.2.12._project_conv_padding                     | (1, 480, 40, 40, 3)            | <--- ¡BUENA OPCIÓN!
+model._blocks.2.12._bn2                                      | (1, 80, 40, 40, 3)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.12._swish                                    | (1, 20, 1, 1, 1)               | 
+model._blocks.2.13                                           | (1, 80, 40, 40, 3)             | 
+model._blocks.2.13._expand_conv                              | (1, 480, 40, 40, 3)            | 
+model._blocks.2.13._expand_conv_padding                      | (1, 80, 40, 40, 3)             | 
+model._blocks.2.13._bn0                                      | (1, 480, 40, 40, 3)            | 
+model._blocks.2.13._depthwise_conv                           | (1, 480, 40, 40, 3)            | 
+model._blocks.2.13._depthwise_conv_padding                   | (1, 480, 44, 44, 7)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.13._bn1                                      | (1, 480, 40, 40, 3)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.13._se_adaptpool                             | (1, 480, 1, 1, 1)              | 
+model._blocks.2.13._se_reduce                                | (1, 20, 1, 1, 1)               | 
+model._blocks.2.13._se_reduce_padding                        | (1, 480, 1, 1, 1)              | 
+model._blocks.2.13._se_expand                                | (1, 480, 1, 1, 1)              | 
+model._blocks.2.13._se_expand_padding                        | (1, 20, 1, 1, 1)               | 
+model._blocks.2.13._project_conv                             | (1, 80, 40, 40, 3)             | <--- ¡BUENA OPCIÓN!
+model._blocks.2.13._project_conv_padding                     | (1, 480, 40, 40, 3)            | <--- ¡BUENA OPCIÓN!
+model._blocks.2.13._bn2                                      | (1, 80, 40, 40, 3)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.13._swish                                    | (1, 20, 1, 1, 1)               | 
+model._blocks.2.14                                           | (1, 80, 40, 40, 3)             | 
+model._blocks.2.14._expand_conv                              | (1, 480, 40, 40, 3)            | 
+model._blocks.2.14._expand_conv_padding                      | (1, 80, 40, 40, 3)             | 
+model._blocks.2.14._bn0                                      | (1, 480, 40, 40, 3)            | 
+model._blocks.2.14._depthwise_conv                           | (1, 480, 40, 40, 3)            | 
+model._blocks.2.14._depthwise_conv_padding                   | (1, 480, 44, 44, 7)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.14._bn1                                      | (1, 480, 40, 40, 3)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.14._se_adaptpool                             | (1, 480, 1, 1, 1)              | 
+model._blocks.2.14._se_reduce                                | (1, 20, 1, 1, 1)               | 
+model._blocks.2.14._se_reduce_padding                        | (1, 480, 1, 1, 1)              | 
+model._blocks.2.14._se_expand                                | (1, 480, 1, 1, 1)              | 
+model._blocks.2.14._se_expand_padding                        | (1, 20, 1, 1, 1)               | 
+model._blocks.2.14._project_conv                             | (1, 80, 40, 40, 3)             | <--- ¡BUENA OPCIÓN!
+model._blocks.2.14._project_conv_padding                     | (1, 480, 40, 40, 3)            | <--- ¡BUENA OPCIÓN!
+model._blocks.2.14._bn2                                      | (1, 80, 40, 40, 3)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.14._swish                                    | (1, 20, 1, 1, 1)               | 
+model._blocks.2.15                                           | (1, 80, 40, 40, 3)             | 
+model._blocks.2.15._expand_conv                              | (1, 480, 40, 40, 3)            | 
+model._blocks.2.15._expand_conv_padding                      | (1, 80, 40, 40, 3)             | 
+model._blocks.2.15._bn0                                      | (1, 480, 40, 40, 3)            | 
+model._blocks.2.15._depthwise_conv                           | (1, 480, 40, 40, 3)            | 
+model._blocks.2.15._depthwise_conv_padding                   | (1, 480, 44, 44, 7)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.15._bn1                                      | (1, 480, 40, 40, 3)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.15._se_adaptpool                             | (1, 480, 1, 1, 1)              | 
+model._blocks.2.15._se_reduce                                | (1, 20, 1, 1, 1)               | 
+model._blocks.2.15._se_reduce_padding                        | (1, 480, 1, 1, 1)              | 
+model._blocks.2.15._se_expand                                | (1, 480, 1, 1, 1)              | 
+model._blocks.2.15._se_expand_padding                        | (1, 20, 1, 1, 1)               | 
+model._blocks.2.15._project_conv                             | (1, 80, 40, 40, 3)             | <--- ¡BUENA OPCIÓN!
+model._blocks.2.15._project_conv_padding                     | (1, 480, 40, 40, 3)            | <--- ¡BUENA OPCIÓN!
+model._blocks.2.15._bn2                                      | (1, 80, 40, 40, 3)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.15._swish                                    | (1, 20, 1, 1, 1)               | 
+model._blocks.2.16                                           | (1, 80, 40, 40, 3)             | 
+model._blocks.2.16._expand_conv                              | (1, 480, 40, 40, 3)            | 
+model._blocks.2.16._expand_conv_padding                      | (1, 80, 40, 40, 3)             | 
+model._blocks.2.16._bn0                                      | (1, 480, 40, 40, 3)            | 
+model._blocks.2.16._depthwise_conv                           | (1, 480, 40, 40, 3)            | 
+model._blocks.2.16._depthwise_conv_padding                   | (1, 480, 44, 44, 7)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.16._bn1                                      | (1, 480, 40, 40, 3)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.16._se_adaptpool                             | (1, 480, 1, 1, 1)              | 
+model._blocks.2.16._se_reduce                                | (1, 20, 1, 1, 1)               | 
+model._blocks.2.16._se_reduce_padding                        | (1, 480, 1, 1, 1)              | 
+model._blocks.2.16._se_expand                                | (1, 480, 1, 1, 1)              | 
+model._blocks.2.16._se_expand_padding                        | (1, 20, 1, 1, 1)               | 
+model._blocks.2.16._project_conv                             | (1, 80, 40, 40, 3)             | <--- ¡BUENA OPCIÓN!
+model._blocks.2.16._project_conv_padding                     | (1, 480, 40, 40, 3)            | <--- ¡BUENA OPCIÓN!
+model._blocks.2.16._bn2                                      | (1, 80, 40, 40, 3)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.16._swish                                    | (1, 20, 1, 1, 1)               | 
+model._blocks.2.17                                           | (1, 80, 40, 40, 3)             | 
+model._blocks.2.17._expand_conv                              | (1, 480, 40, 40, 3)            | 
+model._blocks.2.17._expand_conv_padding                      | (1, 80, 40, 40, 3)             | 
+model._blocks.2.17._bn0                                      | (1, 480, 40, 40, 3)            | 
+model._blocks.2.17._depthwise_conv                           | (1, 480, 40, 40, 3)            | 
+model._blocks.2.17._depthwise_conv_padding                   | (1, 480, 44, 44, 7)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.17._bn1                                      | (1, 480, 40, 40, 3)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.17._se_adaptpool                             | (1, 480, 1, 1, 1)              | 
+model._blocks.2.17._se_reduce                                | (1, 20, 1, 1, 1)               | 
+model._blocks.2.17._se_reduce_padding                        | (1, 480, 1, 1, 1)              | 
+model._blocks.2.17._se_expand                                | (1, 480, 1, 1, 1)              | 
+model._blocks.2.17._se_expand_padding                        | (1, 20, 1, 1, 1)               | 
+model._blocks.2.17._project_conv                             | (1, 80, 40, 40, 3)             | <--- ¡BUENA OPCIÓN!
+model._blocks.2.17._project_conv_padding                     | (1, 480, 40, 40, 3)            | <--- ¡BUENA OPCIÓN!
+model._blocks.2.17._bn2                                      | (1, 80, 40, 40, 3)             | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.2.17._swish                                    | (1, 20, 1, 1, 1)               | 
+model._blocks.3                                              | (1, 160, 20, 20, 2)            | 
+model._blocks.3.18                                           | (1, 160, 20, 20, 2)            | 
+model._blocks.3.18._expand_conv                              | (1, 480, 40, 40, 3)            | 
+model._blocks.3.18._expand_conv_padding                      | (1, 80, 40, 40, 3)             | 
+model._blocks.3.18._bn0                                      | (1, 480, 40, 40, 3)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.18._depthwise_conv                           | (1, 480, 20, 20, 2)            | 
+model._blocks.3.18._depthwise_conv_padding                   | (1, 480, 42, 42, 5)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.18._bn1                                      | (1, 480, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.18._se_adaptpool                             | (1, 480, 1, 1, 1)              | 
+model._blocks.3.18._se_reduce                                | (1, 20, 1, 1, 1)               | 
+model._blocks.3.18._se_reduce_padding                        | (1, 480, 1, 1, 1)              | 
+model._blocks.3.18._se_expand                                | (1, 480, 1, 1, 1)              | 
+model._blocks.3.18._se_expand_padding                        | (1, 20, 1, 1, 1)               | 
+model._blocks.3.18._project_conv                             | (1, 160, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.18._project_conv_padding                     | (1, 480, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.18._bn2                                      | (1, 160, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.18._swish                                    | (1, 20, 1, 1, 1)               | 
+model._blocks.3.19                                           | (1, 160, 20, 20, 2)            | 
+model._blocks.3.19._expand_conv                              | (1, 960, 20, 20, 2)            | 
+model._blocks.3.19._expand_conv_padding                      | (1, 160, 20, 20, 2)            | 
+model._blocks.3.19._bn0                                      | (1, 960, 20, 20, 2)            | 
+model._blocks.3.19._depthwise_conv                           | (1, 960, 20, 20, 2)            | 
+model._blocks.3.19._depthwise_conv_padding                   | (1, 960, 22, 22, 4)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.19._bn1                                      | (1, 960, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.19._se_adaptpool                             | (1, 960, 1, 1, 1)              | 
+model._blocks.3.19._se_reduce                                | (1, 40, 1, 1, 1)               | 
+model._blocks.3.19._se_reduce_padding                        | (1, 960, 1, 1, 1)              | 
+model._blocks.3.19._se_expand                                | (1, 960, 1, 1, 1)              | 
+model._blocks.3.19._se_expand_padding                        | (1, 40, 1, 1, 1)               | 
+model._blocks.3.19._project_conv                             | (1, 160, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.19._project_conv_padding                     | (1, 960, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.19._bn2                                      | (1, 160, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.19._swish                                    | (1, 40, 1, 1, 1)               | 
+model._blocks.3.20                                           | (1, 160, 20, 20, 2)            | 
+model._blocks.3.20._expand_conv                              | (1, 960, 20, 20, 2)            | 
+model._blocks.3.20._expand_conv_padding                      | (1, 160, 20, 20, 2)            | 
+model._blocks.3.20._bn0                                      | (1, 960, 20, 20, 2)            | 
+model._blocks.3.20._depthwise_conv                           | (1, 960, 20, 20, 2)            | 
+model._blocks.3.20._depthwise_conv_padding                   | (1, 960, 22, 22, 4)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.20._bn1                                      | (1, 960, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.20._se_adaptpool                             | (1, 960, 1, 1, 1)              | 
+model._blocks.3.20._se_reduce                                | (1, 40, 1, 1, 1)               | 
+model._blocks.3.20._se_reduce_padding                        | (1, 960, 1, 1, 1)              | 
+model._blocks.3.20._se_expand                                | (1, 960, 1, 1, 1)              | 
+model._blocks.3.20._se_expand_padding                        | (1, 40, 1, 1, 1)               | 
+model._blocks.3.20._project_conv                             | (1, 160, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.20._project_conv_padding                     | (1, 960, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.20._bn2                                      | (1, 160, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.20._swish                                    | (1, 40, 1, 1, 1)               | 
+model._blocks.3.21                                           | (1, 160, 20, 20, 2)            | 
+model._blocks.3.21._expand_conv                              | (1, 960, 20, 20, 2)            | 
+model._blocks.3.21._expand_conv_padding                      | (1, 160, 20, 20, 2)            | 
+model._blocks.3.21._bn0                                      | (1, 960, 20, 20, 2)            | 
+model._blocks.3.21._depthwise_conv                           | (1, 960, 20, 20, 2)            | 
+model._blocks.3.21._depthwise_conv_padding                   | (1, 960, 22, 22, 4)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.21._bn1                                      | (1, 960, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.21._se_adaptpool                             | (1, 960, 1, 1, 1)              | 
+model._blocks.3.21._se_reduce                                | (1, 40, 1, 1, 1)               | 
+model._blocks.3.21._se_reduce_padding                        | (1, 960, 1, 1, 1)              | 
+model._blocks.3.21._se_expand                                | (1, 960, 1, 1, 1)              | 
+model._blocks.3.21._se_expand_padding                        | (1, 40, 1, 1, 1)               | 
+model._blocks.3.21._project_conv                             | (1, 160, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.21._project_conv_padding                     | (1, 960, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.21._bn2                                      | (1, 160, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.21._swish                                    | (1, 40, 1, 1, 1)               | 
+model._blocks.3.22                                           | (1, 160, 20, 20, 2)            | 
+model._blocks.3.22._expand_conv                              | (1, 960, 20, 20, 2)            | 
+model._blocks.3.22._expand_conv_padding                      | (1, 160, 20, 20, 2)            | 
+model._blocks.3.22._bn0                                      | (1, 960, 20, 20, 2)            | 
+model._blocks.3.22._depthwise_conv                           | (1, 960, 20, 20, 2)            | 
+model._blocks.3.22._depthwise_conv_padding                   | (1, 960, 22, 22, 4)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.22._bn1                                      | (1, 960, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.22._se_adaptpool                             | (1, 960, 1, 1, 1)              | 
+model._blocks.3.22._se_reduce                                | (1, 40, 1, 1, 1)               | 
+model._blocks.3.22._se_reduce_padding                        | (1, 960, 1, 1, 1)              | 
+model._blocks.3.22._se_expand                                | (1, 960, 1, 1, 1)              | 
+model._blocks.3.22._se_expand_padding                        | (1, 40, 1, 1, 1)               | 
+model._blocks.3.22._project_conv                             | (1, 160, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.22._project_conv_padding                     | (1, 960, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.22._bn2                                      | (1, 160, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.22._swish                                    | (1, 40, 1, 1, 1)               | 
+model._blocks.3.23                                           | (1, 160, 20, 20, 2)            | 
+model._blocks.3.23._expand_conv                              | (1, 960, 20, 20, 2)            | 
+model._blocks.3.23._expand_conv_padding                      | (1, 160, 20, 20, 2)            | 
+model._blocks.3.23._bn0                                      | (1, 960, 20, 20, 2)            | 
+model._blocks.3.23._depthwise_conv                           | (1, 960, 20, 20, 2)            | 
+model._blocks.3.23._depthwise_conv_padding                   | (1, 960, 22, 22, 4)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.23._bn1                                      | (1, 960, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.23._se_adaptpool                             | (1, 960, 1, 1, 1)              | 
+model._blocks.3.23._se_reduce                                | (1, 40, 1, 1, 1)               | 
+model._blocks.3.23._se_reduce_padding                        | (1, 960, 1, 1, 1)              | 
+model._blocks.3.23._se_expand                                | (1, 960, 1, 1, 1)              | 
+model._blocks.3.23._se_expand_padding                        | (1, 40, 1, 1, 1)               | 
+model._blocks.3.23._project_conv                             | (1, 160, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.23._project_conv_padding                     | (1, 960, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.23._bn2                                      | (1, 160, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.23._swish                                    | (1, 40, 1, 1, 1)               | 
+model._blocks.3.24                                           | (1, 160, 20, 20, 2)            | 
+model._blocks.3.24._expand_conv                              | (1, 960, 20, 20, 2)            | 
+model._blocks.3.24._expand_conv_padding                      | (1, 160, 20, 20, 2)            | 
+model._blocks.3.24._bn0                                      | (1, 960, 20, 20, 2)            | 
+model._blocks.3.24._depthwise_conv                           | (1, 960, 20, 20, 2)            | 
+model._blocks.3.24._depthwise_conv_padding                   | (1, 960, 22, 22, 4)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.24._bn1                                      | (1, 960, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.24._se_adaptpool                             | (1, 960, 1, 1, 1)              | 
+model._blocks.3.24._se_reduce                                | (1, 40, 1, 1, 1)               | 
+model._blocks.3.24._se_reduce_padding                        | (1, 960, 1, 1, 1)              | 
+model._blocks.3.24._se_expand                                | (1, 960, 1, 1, 1)              | 
+model._blocks.3.24._se_expand_padding                        | (1, 40, 1, 1, 1)               | 
+model._blocks.3.24._project_conv                             | (1, 160, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.24._project_conv_padding                     | (1, 960, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.24._bn2                                      | (1, 160, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.24._swish                                    | (1, 40, 1, 1, 1)               | 
+model._blocks.3.25                                           | (1, 160, 20, 20, 2)            | 
+model._blocks.3.25._expand_conv                              | (1, 960, 20, 20, 2)            | 
+model._blocks.3.25._expand_conv_padding                      | (1, 160, 20, 20, 2)            | 
+model._blocks.3.25._bn0                                      | (1, 960, 20, 20, 2)            | 
+model._blocks.3.25._depthwise_conv                           | (1, 960, 20, 20, 2)            | 
+model._blocks.3.25._depthwise_conv_padding                   | (1, 960, 22, 22, 4)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.25._bn1                                      | (1, 960, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.25._se_adaptpool                             | (1, 960, 1, 1, 1)              | 
+model._blocks.3.25._se_reduce                                | (1, 40, 1, 1, 1)               | 
+model._blocks.3.25._se_reduce_padding                        | (1, 960, 1, 1, 1)              | 
+model._blocks.3.25._se_expand                                | (1, 960, 1, 1, 1)              | 
+model._blocks.3.25._se_expand_padding                        | (1, 40, 1, 1, 1)               | 
+model._blocks.3.25._project_conv                             | (1, 160, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.25._project_conv_padding                     | (1, 960, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.25._bn2                                      | (1, 160, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.25._swish                                    | (1, 40, 1, 1, 1)               | 
+model._blocks.3.26                                           | (1, 160, 20, 20, 2)            | 
+model._blocks.3.26._expand_conv                              | (1, 960, 20, 20, 2)            | 
+model._blocks.3.26._expand_conv_padding                      | (1, 160, 20, 20, 2)            | 
+model._blocks.3.26._bn0                                      | (1, 960, 20, 20, 2)            | 
+model._blocks.3.26._depthwise_conv                           | (1, 960, 20, 20, 2)            | 
+model._blocks.3.26._depthwise_conv_padding                   | (1, 960, 22, 22, 4)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.26._bn1                                      | (1, 960, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.26._se_adaptpool                             | (1, 960, 1, 1, 1)              | 
+model._blocks.3.26._se_reduce                                | (1, 40, 1, 1, 1)               | 
+model._blocks.3.26._se_reduce_padding                        | (1, 960, 1, 1, 1)              | 
+model._blocks.3.26._se_expand                                | (1, 960, 1, 1, 1)              | 
+model._blocks.3.26._se_expand_padding                        | (1, 40, 1, 1, 1)               | 
+model._blocks.3.26._project_conv                             | (1, 160, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.26._project_conv_padding                     | (1, 960, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.26._bn2                                      | (1, 160, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.26._swish                                    | (1, 40, 1, 1, 1)               | 
+model._blocks.3.27                                           | (1, 160, 20, 20, 2)            | 
+model._blocks.3.27._expand_conv                              | (1, 960, 20, 20, 2)            | 
+model._blocks.3.27._expand_conv_padding                      | (1, 160, 20, 20, 2)            | 
+model._blocks.3.27._bn0                                      | (1, 960, 20, 20, 2)            | 
+model._blocks.3.27._depthwise_conv                           | (1, 960, 20, 20, 2)            | 
+model._blocks.3.27._depthwise_conv_padding                   | (1, 960, 22, 22, 4)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.27._bn1                                      | (1, 960, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.27._se_adaptpool                             | (1, 960, 1, 1, 1)              | 
+model._blocks.3.27._se_reduce                                | (1, 40, 1, 1, 1)               | 
+model._blocks.3.27._se_reduce_padding                        | (1, 960, 1, 1, 1)              | 
+model._blocks.3.27._se_expand                                | (1, 960, 1, 1, 1)              | 
+model._blocks.3.27._se_expand_padding                        | (1, 40, 1, 1, 1)               | 
+model._blocks.3.27._project_conv                             | (1, 160, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.27._project_conv_padding                     | (1, 960, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.3.27._bn2                                      | (1, 160, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.3.27._swish                                    | (1, 40, 1, 1, 1)               | 
+model._blocks.4                                              | (1, 224, 20, 20, 2)            | 
+model._blocks.4.28                                           | (1, 224, 20, 20, 2)            | 
+model._blocks.4.28._expand_conv                              | (1, 960, 20, 20, 2)            | 
+model._blocks.4.28._expand_conv_padding                      | (1, 160, 20, 20, 2)            | 
+model._blocks.4.28._bn0                                      | (1, 960, 20, 20, 2)            | 
+model._blocks.4.28._depthwise_conv                           | (1, 960, 20, 20, 2)            | 
+model._blocks.4.28._depthwise_conv_padding                   | (1, 960, 24, 24, 6)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.28._bn1                                      | (1, 960, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.28._se_adaptpool                             | (1, 960, 1, 1, 1)              | 
+model._blocks.4.28._se_reduce                                | (1, 40, 1, 1, 1)               | 
+model._blocks.4.28._se_reduce_padding                        | (1, 960, 1, 1, 1)              | 
+model._blocks.4.28._se_expand                                | (1, 960, 1, 1, 1)              | 
+model._blocks.4.28._se_expand_padding                        | (1, 40, 1, 1, 1)               | 
+model._blocks.4.28._project_conv                             | (1, 224, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.4.28._project_conv_padding                     | (1, 960, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.4.28._bn2                                      | (1, 224, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.28._swish                                    | (1, 40, 1, 1, 1)               | 
+model._blocks.4.29                                           | (1, 224, 20, 20, 2)            | 
+model._blocks.4.29._expand_conv                              | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.29._expand_conv_padding                      | (1, 224, 20, 20, 2)            | 
+model._blocks.4.29._bn0                                      | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.29._depthwise_conv                           | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.29._depthwise_conv_padding                   | (1, 1344, 24, 24, 6)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.29._bn1                                      | (1, 1344, 20, 20, 2)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.29._se_adaptpool                             | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.29._se_reduce                                | (1, 56, 1, 1, 1)               | 
+model._blocks.4.29._se_reduce_padding                        | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.29._se_expand                                | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.29._se_expand_padding                        | (1, 56, 1, 1, 1)               | 
+model._blocks.4.29._project_conv                             | (1, 224, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.4.29._project_conv_padding                     | (1, 1344, 20, 20, 2)           | <--- ¡BUENA OPCIÓN!
+model._blocks.4.29._bn2                                      | (1, 224, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.29._swish                                    | (1, 56, 1, 1, 1)               | 
+model._blocks.4.30                                           | (1, 224, 20, 20, 2)            | 
+model._blocks.4.30._expand_conv                              | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.30._expand_conv_padding                      | (1, 224, 20, 20, 2)            | 
+model._blocks.4.30._bn0                                      | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.30._depthwise_conv                           | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.30._depthwise_conv_padding                   | (1, 1344, 24, 24, 6)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.30._bn1                                      | (1, 1344, 20, 20, 2)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.30._se_adaptpool                             | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.30._se_reduce                                | (1, 56, 1, 1, 1)               | 
+model._blocks.4.30._se_reduce_padding                        | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.30._se_expand                                | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.30._se_expand_padding                        | (1, 56, 1, 1, 1)               | 
+model._blocks.4.30._project_conv                             | (1, 224, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.4.30._project_conv_padding                     | (1, 1344, 20, 20, 2)           | <--- ¡BUENA OPCIÓN!
+model._blocks.4.30._bn2                                      | (1, 224, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.30._swish                                    | (1, 56, 1, 1, 1)               | 
+model._blocks.4.31                                           | (1, 224, 20, 20, 2)            | 
+model._blocks.4.31._expand_conv                              | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.31._expand_conv_padding                      | (1, 224, 20, 20, 2)            | 
+model._blocks.4.31._bn0                                      | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.31._depthwise_conv                           | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.31._depthwise_conv_padding                   | (1, 1344, 24, 24, 6)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.31._bn1                                      | (1, 1344, 20, 20, 2)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.31._se_adaptpool                             | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.31._se_reduce                                | (1, 56, 1, 1, 1)               | 
+model._blocks.4.31._se_reduce_padding                        | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.31._se_expand                                | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.31._se_expand_padding                        | (1, 56, 1, 1, 1)               | 
+model._blocks.4.31._project_conv                             | (1, 224, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.4.31._project_conv_padding                     | (1, 1344, 20, 20, 2)           | <--- ¡BUENA OPCIÓN!
+model._blocks.4.31._bn2                                      | (1, 224, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.31._swish                                    | (1, 56, 1, 1, 1)               | 
+model._blocks.4.32                                           | (1, 224, 20, 20, 2)            | 
+model._blocks.4.32._expand_conv                              | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.32._expand_conv_padding                      | (1, 224, 20, 20, 2)            | 
+model._blocks.4.32._bn0                                      | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.32._depthwise_conv                           | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.32._depthwise_conv_padding                   | (1, 1344, 24, 24, 6)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.32._bn1                                      | (1, 1344, 20, 20, 2)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.32._se_adaptpool                             | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.32._se_reduce                                | (1, 56, 1, 1, 1)               | 
+model._blocks.4.32._se_reduce_padding                        | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.32._se_expand                                | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.32._se_expand_padding                        | (1, 56, 1, 1, 1)               | 
+model._blocks.4.32._project_conv                             | (1, 224, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.4.32._project_conv_padding                     | (1, 1344, 20, 20, 2)           | <--- ¡BUENA OPCIÓN!
+model._blocks.4.32._bn2                                      | (1, 224, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.32._swish                                    | (1, 56, 1, 1, 1)               | 
+model._blocks.4.33                                           | (1, 224, 20, 20, 2)            | 
+model._blocks.4.33._expand_conv                              | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.33._expand_conv_padding                      | (1, 224, 20, 20, 2)            | 
+model._blocks.4.33._bn0                                      | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.33._depthwise_conv                           | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.33._depthwise_conv_padding                   | (1, 1344, 24, 24, 6)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.33._bn1                                      | (1, 1344, 20, 20, 2)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.33._se_adaptpool                             | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.33._se_reduce                                | (1, 56, 1, 1, 1)               | 
+model._blocks.4.33._se_reduce_padding                        | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.33._se_expand                                | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.33._se_expand_padding                        | (1, 56, 1, 1, 1)               | 
+model._blocks.4.33._project_conv                             | (1, 224, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.4.33._project_conv_padding                     | (1, 1344, 20, 20, 2)           | <--- ¡BUENA OPCIÓN!
+model._blocks.4.33._bn2                                      | (1, 224, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.33._swish                                    | (1, 56, 1, 1, 1)               | 
+model._blocks.4.34                                           | (1, 224, 20, 20, 2)            | 
+model._blocks.4.34._expand_conv                              | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.34._expand_conv_padding                      | (1, 224, 20, 20, 2)            | 
+model._blocks.4.34._bn0                                      | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.34._depthwise_conv                           | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.34._depthwise_conv_padding                   | (1, 1344, 24, 24, 6)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.34._bn1                                      | (1, 1344, 20, 20, 2)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.34._se_adaptpool                             | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.34._se_reduce                                | (1, 56, 1, 1, 1)               | 
+model._blocks.4.34._se_reduce_padding                        | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.34._se_expand                                | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.34._se_expand_padding                        | (1, 56, 1, 1, 1)               | 
+model._blocks.4.34._project_conv                             | (1, 224, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.4.34._project_conv_padding                     | (1, 1344, 20, 20, 2)           | <--- ¡BUENA OPCIÓN!
+model._blocks.4.34._bn2                                      | (1, 224, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.34._swish                                    | (1, 56, 1, 1, 1)               | 
+model._blocks.4.35                                           | (1, 224, 20, 20, 2)            | 
+model._blocks.4.35._expand_conv                              | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.35._expand_conv_padding                      | (1, 224, 20, 20, 2)            | 
+model._blocks.4.35._bn0                                      | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.35._depthwise_conv                           | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.35._depthwise_conv_padding                   | (1, 1344, 24, 24, 6)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.35._bn1                                      | (1, 1344, 20, 20, 2)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.35._se_adaptpool                             | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.35._se_reduce                                | (1, 56, 1, 1, 1)               | 
+model._blocks.4.35._se_reduce_padding                        | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.35._se_expand                                | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.35._se_expand_padding                        | (1, 56, 1, 1, 1)               | 
+model._blocks.4.35._project_conv                             | (1, 224, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.4.35._project_conv_padding                     | (1, 1344, 20, 20, 2)           | <--- ¡BUENA OPCIÓN!
+model._blocks.4.35._bn2                                      | (1, 224, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.35._swish                                    | (1, 56, 1, 1, 1)               | 
+model._blocks.4.36                                           | (1, 224, 20, 20, 2)            | 
+model._blocks.4.36._expand_conv                              | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.36._expand_conv_padding                      | (1, 224, 20, 20, 2)            | 
+model._blocks.4.36._bn0                                      | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.36._depthwise_conv                           | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.36._depthwise_conv_padding                   | (1, 1344, 24, 24, 6)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.36._bn1                                      | (1, 1344, 20, 20, 2)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.36._se_adaptpool                             | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.36._se_reduce                                | (1, 56, 1, 1, 1)               | 
+model._blocks.4.36._se_reduce_padding                        | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.36._se_expand                                | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.36._se_expand_padding                        | (1, 56, 1, 1, 1)               | 
+model._blocks.4.36._project_conv                             | (1, 224, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.4.36._project_conv_padding                     | (1, 1344, 20, 20, 2)           | <--- ¡BUENA OPCIÓN!
+model._blocks.4.36._bn2                                      | (1, 224, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.36._swish                                    | (1, 56, 1, 1, 1)               | 
+model._blocks.4.37                                           | (1, 224, 20, 20, 2)            | 
+model._blocks.4.37._expand_conv                              | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.37._expand_conv_padding                      | (1, 224, 20, 20, 2)            | 
+model._blocks.4.37._bn0                                      | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.37._depthwise_conv                           | (1, 1344, 20, 20, 2)           | 
+model._blocks.4.37._depthwise_conv_padding                   | (1, 1344, 24, 24, 6)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.37._bn1                                      | (1, 1344, 20, 20, 2)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.37._se_adaptpool                             | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.37._se_reduce                                | (1, 56, 1, 1, 1)               | 
+model._blocks.4.37._se_reduce_padding                        | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.37._se_expand                                | (1, 1344, 1, 1, 1)             | 
+model._blocks.4.37._se_expand_padding                        | (1, 56, 1, 1, 1)               | 
+model._blocks.4.37._project_conv                             | (1, 224, 20, 20, 2)            | <--- ¡BUENA OPCIÓN!
+model._blocks.4.37._project_conv_padding                     | (1, 1344, 20, 20, 2)           | <--- ¡BUENA OPCIÓN!
+model._blocks.4.37._bn2                                      | (1, 224, 20, 20, 2)            | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.4.37._swish                                    | (1, 56, 1, 1, 1)               | 
+model._blocks.5                                              | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.38                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.38._expand_conv                              | (1, 1344, 20, 20, 2)           | 
+model._blocks.5.38._expand_conv_padding                      | (1, 224, 20, 20, 2)            | 
+model._blocks.5.38._bn0                                      | (1, 1344, 20, 20, 2)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.38._depthwise_conv                           | (1, 1344, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.38._depthwise_conv_padding                   | (1, 1344, 23, 23, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.38._bn1                                      | (1, 1344, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.38._se_adaptpool                             | (1, 1344, 1, 1, 1)             | 
+model._blocks.5.38._se_reduce                                | (1, 56, 1, 1, 1)               | 
+model._blocks.5.38._se_reduce_padding                        | (1, 1344, 1, 1, 1)             | 
+model._blocks.5.38._se_expand                                | (1, 1344, 1, 1, 1)             | 
+model._blocks.5.38._se_expand_padding                        | (1, 56, 1, 1, 1)               | 
+model._blocks.5.38._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.38._project_conv_padding                     | (1, 1344, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.38._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.38._swish                                    | (1, 56, 1, 1, 1)               | 
+model._blocks.5.39                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.39._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.39._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.39._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.39._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.39._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.39._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.39._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.39._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.39._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.39._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.39._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.39._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.39._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.39._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.39._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.5.40                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.40._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.40._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.40._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.40._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.40._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.40._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.40._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.40._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.40._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.40._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.40._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.40._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.40._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.40._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.40._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.5.41                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.41._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.41._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.41._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.41._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.41._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.41._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.41._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.41._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.41._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.41._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.41._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.41._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.41._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.41._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.41._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.5.42                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.42._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.42._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.42._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.42._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.42._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.42._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.42._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.42._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.42._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.42._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.42._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.42._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.42._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.42._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.42._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.5.43                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.43._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.43._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.43._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.43._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.43._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.43._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.43._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.43._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.43._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.43._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.43._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.43._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.43._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.43._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.43._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.5.44                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.44._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.44._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.44._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.44._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.44._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.44._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.44._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.44._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.44._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.44._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.44._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.44._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.44._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.44._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.44._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.5.45                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.45._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.45._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.45._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.45._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.45._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.45._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.45._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.45._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.45._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.45._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.45._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.45._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.45._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.45._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.45._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.5.46                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.46._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.46._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.46._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.46._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.46._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.46._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.46._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.46._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.46._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.46._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.46._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.46._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.46._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.46._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.46._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.5.47                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.47._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.47._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.47._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.47._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.47._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.47._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.47._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.47._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.47._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.47._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.47._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.47._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.47._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.47._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.47._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.5.48                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.48._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.48._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.48._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.48._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.48._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.48._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.48._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.48._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.48._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.48._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.48._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.48._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.48._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.48._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.48._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.5.49                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.49._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.49._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.49._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.49._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.49._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.49._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.49._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.49._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.49._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.49._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.49._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.49._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.49._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.49._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.49._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.5.50                                           | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.50._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.50._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.50._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.50._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.50._depthwise_conv_padding                   | (1, 2304, 14, 14, 5)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.50._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.50._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.50._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.5.50._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.50._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.5.50._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.5.50._project_conv                             | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.5.50._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.5.50._bn2                                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.5.50._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.6                                              | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.51                                           | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.51._expand_conv                              | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.51._expand_conv_padding                      | (1, 384, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.51._bn0                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.51._depthwise_conv                           | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.51._depthwise_conv_padding                   | (1, 2304, 12, 12, 3)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.51._bn1                                      | (1, 2304, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.51._se_adaptpool                             | (1, 2304, 1, 1, 1)             | 
+model._blocks.6.51._se_reduce                                | (1, 96, 1, 1, 1)               | 
+model._blocks.6.51._se_reduce_padding                        | (1, 2304, 1, 1, 1)             | 
+model._blocks.6.51._se_expand                                | (1, 2304, 1, 1, 1)             | 
+model._blocks.6.51._se_expand_padding                        | (1, 96, 1, 1, 1)               | 
+model._blocks.6.51._project_conv                             | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.51._project_conv_padding                     | (1, 2304, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.51._bn2                                      | (1, 640, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.51._swish                                    | (1, 96, 1, 1, 1)               | 
+model._blocks.6.52                                           | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.52._expand_conv                              | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.52._expand_conv_padding                      | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.52._bn0                                      | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.52._depthwise_conv                           | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.52._depthwise_conv_padding                   | (1, 3840, 12, 12, 3)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.52._bn1                                      | (1, 3840, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.52._se_adaptpool                             | (1, 3840, 1, 1, 1)             | 
+model._blocks.6.52._se_reduce                                | (1, 160, 1, 1, 1)              | 
+model._blocks.6.52._se_reduce_padding                        | (1, 3840, 1, 1, 1)             | 
+model._blocks.6.52._se_expand                                | (1, 3840, 1, 1, 1)             | 
+model._blocks.6.52._se_expand_padding                        | (1, 160, 1, 1, 1)              | 
+model._blocks.6.52._project_conv                             | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.52._project_conv_padding                     | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.52._bn2                                      | (1, 640, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.52._swish                                    | (1, 160, 1, 1, 1)              | 
+model._blocks.6.53                                           | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.53._expand_conv                              | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.53._expand_conv_padding                      | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.53._bn0                                      | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.53._depthwise_conv                           | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.53._depthwise_conv_padding                   | (1, 3840, 12, 12, 3)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.53._bn1                                      | (1, 3840, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.53._se_adaptpool                             | (1, 3840, 1, 1, 1)             | 
+model._blocks.6.53._se_reduce                                | (1, 160, 1, 1, 1)              | 
+model._blocks.6.53._se_reduce_padding                        | (1, 3840, 1, 1, 1)             | 
+model._blocks.6.53._se_expand                                | (1, 3840, 1, 1, 1)             | 
+model._blocks.6.53._se_expand_padding                        | (1, 160, 1, 1, 1)              | 
+model._blocks.6.53._project_conv                             | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.53._project_conv_padding                     | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.53._bn2                                      | (1, 640, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.53._swish                                    | (1, 160, 1, 1, 1)              | 
+model._blocks.6.54                                           | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.54._expand_conv                              | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.54._expand_conv_padding                      | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.54._bn0                                      | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.54._depthwise_conv                           | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.54._depthwise_conv_padding                   | (1, 3840, 12, 12, 3)           | 
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.54._bn1                                      | (1, 3840, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.54._se_adaptpool                             | (1, 3840, 1, 1, 1)             | 
+model._blocks.6.54._se_reduce                                | (1, 160, 1, 1, 1)              | 
+model._blocks.6.54._se_reduce_padding                        | (1, 3840, 1, 1, 1)             | 
+model._blocks.6.54._se_expand                                | (1, 3840, 1, 1, 1)             | 
+model._blocks.6.54._se_expand_padding                        | (1, 160, 1, 1, 1)              | 
+model._blocks.6.54._project_conv                             | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._blocks.6.54._project_conv_padding                     | (1, 3840, 10, 10, 1)           | (Muy baja res)
+model._blocks.6.54._bn2                                      | (1, 640, 10, 10, 1)            | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._blocks.6.54._swish                                    | (1, 160, 1, 1, 1)              | 
+model._conv_head                                             | (1, 2560, 10, 10, 1)           | (Muy baja res)
+model._conv_head_padding                                     | (1, 640, 10, 10, 1)            | (Muy baja res)
+model._bn1                                                   | (1, 2560, 10, 10, 1)           | (Muy baja res)
+                                    --- BAJADA DE RESOLUCIÓN ---                                    
+model._avg_pooling                                           | (1, 2560, 1, 1, 1)             | 
+model._dropout                                               | (1, 2560)                      | 
+model._fc                                                    | (1, 2)                         | 
+model._swish                                                 | (1, 2560, 10, 10, 1)           | (Muy baja res)
